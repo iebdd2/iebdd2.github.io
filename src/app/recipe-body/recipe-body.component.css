@@ -1,0 +1,254 @@
+/* General */
+
+button {
+  background-color: transparent;
+  text-align: inherit;
+  font: inherit;
+  border-radius: 0;
+  appearance: none;
+}
+
+h1 {
+  padding: 10vh 0 0 0;
+  text-align: center;
+}
+
+.flex {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+/* History */
+
+.history {
+  position: absolute;
+  top: 10vh;
+  width: 13vw;
+  left: 85vw;
+}
+
+.history-delete {
+  font-weight:600;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.history-delete:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.history-item {
+  padding: 0.5vh 0 0 0;
+}
+
+.history-item:hover {
+  cursor: pointer;
+  filter: invert(40%);
+  transform: scale(1.10);
+}
+
+/* Recipe View */
+
+.overview {
+    width: 20vw;
+    text-align: center;
+}
+
+.overview-header {
+  font-weight: bold;
+}
+
+.recipe {
+  justify-content: center;
+  max-width: 70vw;
+  position: absolute;
+  left: 15vw;
+  right: 15vw;
+}
+
+.recipe-item {
+  padding: 1.5vh 3vw;
+}
+
+.preparation {
+  text-align: left;
+  position: relative;
+  max-width: 50vw;
+}
+
+li {
+  max-width: 50vw;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+ol > li::marker {
+  font-weight: bold;
+}
+
+/* Search View */
+
+.search-container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.search-item {
+  padding: 1vh 1vw 1vh 1vw;
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 20vw;
+}
+
+.search-item:hover {
+  cursor: pointer;
+  filter: invert(40%);
+}
+
+/* Main View */
+
+  .main {
+    flex-direction: row;
+    width: 30vw;
+    left: 20vw;
+    right: 50vw;
+    position: relative;
+    top: 15vh;
+  }
+
+  .main-item {
+    padding: 3vh 0 0 0;
+    justify-content: start;
+    gap: 10px 10px;
+  }
+
+  .help {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: left;
+    justify-content: left;
+  }
+
+  /* Main Letters */
+
+  .letter:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+  }
+
+  .letter {
+    border: 1px solid black;
+    width: 2vw;
+    padding: 5px 10px;
+    margin: 2px;
+    position: relative;
+    text-align: center;
+    transition: 0.15s;
+    font-weight: 700;
+  }
+
+  .pressed {
+    background: #a10000;
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+        -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+  }
+
+  /* Main Tags */
+
+  .tag {
+    padding: 5px;
+    border: 1px solid black;
+    margin: 2px;
+    font-weight: 700;
+    transition: 0.15s;
+  }
+
+  .tag:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+  }
+
+  .tag-container {
+    justify-content: start;
+  }
+
+  /* Main Search Results */
+
+  .main_search {
+    position: absolute;
+    text-align: center;
+    width: 20vw;
+    left: 55vw;
+    right: 25vw;
+    top: 15vh;
+  }
+
+  .tags {
+    width: 30vw;
+    left: 20vw;
+    right: 50vw;
+    position: relative;
+  }
+
+  /* Main Search */
+
+  .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    width: 30vw;
+  }
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid black;
+    outline: 0;
+    font-size: 1rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+    color: black;
+  }
+  .form__label {
+    position: absolute;
+    top: -15px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 800;
+  }
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 400;
+    border-width: 3px;
+    border-image: black;
+    border-image-slice: 1;
+    transition: 0.2s;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: -15px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 800;
+  }
+  
+ 
+  

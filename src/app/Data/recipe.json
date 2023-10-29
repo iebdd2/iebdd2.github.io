@@ -1,0 +1,1563 @@
+{
+ "Recipes": {
+  "Vienna Roll": {
+   "names": [
+    "Kaisersemmeln",
+    "Vienna Roll"
+   ],
+   "overview": [
+    "3 {0} {2} \n 5 {0} {3}",
+    "8 {0}",
+    "15 {0}",
+    "75 g",
+    "15 - 20 {0} \n + 25 - 35 {0}",
+    "{4} 16 {0} \n {5} 220°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "10 g {9}",
+     "10 g {10}",
+     "5 g {11}",
+     "18 g {12} {13}",
+     "7 g {14} {15} 15 g {16}",
+     "60 g {17} {18}",
+     "220 g {19} (23°C)"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 75 g auswiegen.",
+     "Teigstücke rund formen und etwas bemehlen.",
+     "Teigkugeln mit einem Geschirrtuch abdecken und weitere 15 - 20 Minuten bei Raumtemperatur rasten lassen.",
+     "Die Kugeln mit der Hand jeweils flach drücken.",
+     "Den Daumen auf die linke Seite des Teiges legen und das obere Drittel des Kreises über den Daumen Klappen, sodass der Daumen eine kleine Höhle bildet.",
+     "Den Daumen herausziehen und direkt rechts der Höhle auf den zusammengefaltenen Teig legen. Diesen dabei etwas flach drücken.",
+     "Wieder das obere Drittel des Kreises über den Daumen klappen, sodass zwei nebeneinanderliegende Höhlen entstehen.",
+     "Diesen Prozess noch zwei Mal wiederholen. Am Ende den Rest des Teiges in die übriggebliene erste Höhle stecken, sodass eine runde Semmel entsteht.",
+     "Mit der Sternform nach unten auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech geben, leicht befeuchten und zugedeckt 25 - 35 Minuten rasten lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 210°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Vor dem Backen die Semmeln vorsichtig umdrehen, noch ein Mal mit Wasser besprühen und in den Backofen geben.",
+     "Goldbraun backen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Styrian Bread Roll": {
+   "names": [
+    "Steirische Langsemmel",
+    "Styrian Bread Roll"
+   ],
+   "overview": [
+    "3 {0} {2} \n 5 {0} {3}",
+    "8 {0}",
+    "15 {0}",
+    "75 g",
+    "5 {0} \n + 25 - 35 {0}",
+    "{4} 16 {0} \n {5} 210°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "10 g {9}",
+     "10 g {10}",
+     "5 g {11}",
+     "18 g {12} {13}",
+     "7 g {14} {15} 15 g {16}",
+     "60 g {17} {18}",
+     "220 g {19} (23°C}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 75 g auswiegen.",
+     "Teigstücke rund formen und anschließend zu einer etwa 8 cm langen Wurst rollen.",
+     "Etwas bemehlen und kurz für 5 Minuten zugedeckt ruhen lassen.",
+     "Jede der Würste mit einem dünnen Holz oder ähnlichem in der Mitte gut durchdrücken.",
+     "Die Langsemmeln verkehrt auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen und etwas befeuchten.",
+     "Teiglinge 25 - 35 Minuten bei Raumtemperatur zugedeckt rasten lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 210°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Vor dem Backen die Semmeln vorsichtig umdrehen, noch ein Mal mit Wasser besprühen und in den Backofen geben.",
+     "Goldbraun backen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Salt Sticks": {
+   "names": [
+    "Salzstangerl",
+    "Salt Sticks"
+   ],
+   "overview": [
+    "3 {0} {2} \n 5 {3}",
+    "8 {0}",
+    "15 {0}",
+    "90 g",
+    "15 - 20 {0} \n + 25 - 35 {0}",
+    "{4} 17 - 18 {0} \n {5} 210°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "10 g {9}",
+     "10 g {10}",
+     "5 g {11}",
+     "18 g {12} {13}",
+     "7 g {14} {15} 15 g {16}",
+     "60 g {17}",
+     "220 g {19}",
+     "{8} & {20} {21}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 90 g auswiegen.",
+     "Teigstücke rund formen und gut bemehlen.",
+     "15 Minuten bei Raumtemperatur zugedeckt gehen lassen.",
+     "Teigkugeln mit der Hand etwas flach drücken und anschließend mit einem Nudelholz zu etwa 20 cm langen und 12 cm breiten Fladen ausrollen.",
+     "Von oben nach unten den Fladen einrollen, dabei leicht am unteren Ende ziehen, sodass eine dichte Wicklung entsteht.",
+     "Die Salzstangerl auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen und etwas befeuchten.",
+     "Zugedeckt weitere 25 - 35 Minuten bei Raumtemperatur gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 210°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Vor dem Backen, Teiglinge erneut gut mit Wasser besprühen und das grobe Salz sowie den Kümmel über die Salzstangerl streuen.",
+     "Goldbraun backen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Wachau Roll": {
+   "names": [
+    "Wachauer Laibchen",
+    "Wachau Roll"
+   ],
+   "overview": [
+    "4 {0} {2} \n 4 {0} {3}",
+    "8 {0}",
+    "15 {0}",
+    "85 g",
+    "25 - 35 {0}",
+    "{4} 16 - 17 {0} \n {5} 210°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "300 g {22}",
+     "200 g {7}",
+     "10 g {9}",
+     "10 g {10}",
+     "15 g {23}",
+     "15 g {24}",
+     "8 g {20}, {25}",
+     "7 g {14} {15} 15 g {16}",
+     "340 g {19} (24°C)"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 85 g auswiegen.",
+     "Teigstücke rund formen, dabei eine Seite entlang der Arbeitsfläche ziehen, damit eine raue Oberfläche entsteht.",
+     "Mit der rauen Seite nach oben, auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen und leicht bemehlen.",
+     "Teigstücke anschließend zugedeckt 25 - 35 Minuten gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 210°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Teiglinge vor dem Backen leicht mit Wasser besprühen und in den Backofen schieben.",
+     "Goldbraun backen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T2}",
+    "{T4}",
+    "{T5}",
+    "{T7}"
+   ]
+  },
+  "Cereal Rolls": {
+   "names": [
+    "Kornstangerl",
+    "Cereal Rolls"
+   ],
+   "overview": [
+    "3 {0} {2} \n 6 {0} {3}",
+    "9 {0}",
+    "20 {0}",
+    "95 g",
+    "15 - 20 {0} \n + 25 - 35 {0}",
+    "{4} 18 {0} \n {5} 210°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",     
+     "250 g {7}",
+     "150 g {26}",
+     "100 g {22}",
+     "10 g {9}",
+     "10 g {10}",
+     "5 g {23}",
+     "15 g {12} {13}",
+     "50 g {27}",
+     "50 g {30}",
+     "25 g {31}",
+     "5 g {32}",
+     "7 g {14} {15} 15 g {16}",
+     "340 g {19} (23°C)",
+     "{27} {15} {30} {21}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 95 g auswiegen.",
+     "Teigstücke rund formen und mit Dinkelmehl bestauben.",
+     "Zugedeckt 15 - 20 Minuten bei Raumtemperatur gehen lassen.",
+     "Teigkugeln mit der Hand etwas flach drücken und zu einem 20 cm mal 12 cm großen Fladen ausrollen.",
+     "Von oben nach unten den Fladen einrollen, dabei leicht am unteren Ende ziehen, sodass eine dichte Wicklung entsteht.",
+     "Etwas befeuchten und mit Sonnenblumenkernen oder Dinkelflocken bestreuen.",
+     "Auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen und leicht befeuchten.",
+     "Weitere 25 - 35 Minuten zugedeckt gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 210°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Vor dem Backen erneut gut mit Wasser besprühen.",
+     "Goldbraun backen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T2}",
+    "{T4}",
+    "{T5}",
+    "{T6}",
+    "{T7}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Spiced Vinschgau Roll": {
+   "names": [
+    "Gewürzvinschgerl",
+    "Spiced Vinschgau Roll"
+   ],
+   "overview": [
+    "10 {0} {2}",
+    "10 {0}",
+    "30 {0}",
+    "90 g",
+    "25 - 35 {0}",
+    "{4} 17 {0} {5} 220°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "350 g {22}",
+     "150 g {7}",
+     "10 g {9}",
+     "10 g {10}",
+     "18 g {23}",
+     "15 g {33}",
+     "12 g {32}",
+     "10 g {20} {25}",
+     "5 g {35} {25}",
+     "7 g {14} {15} 15 g {16}",
+     "400 g {19} (28°C)"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 30 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine stark bemehlte Arbeitsfläche geben und Teigstücke zu je 90 g auswiegen.",
+     "Teigstücke locker rund formen (nicht zu fest andrücken) und auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backbleck legen.",
+     "Teiglinge mit einem Sieb reichlich mit Roggenmehl bestauben und 25 - 35 Minuten zugedeckt gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 220°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Die Teiglinge sind bereit, sobald sich auf der Oberfläche kleine Risse bilden.",
+     "Dunkelbraun backen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T2}",
+    "{T4}",
+    "{T5}",
+    "{T7}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Cheese Wurzelbrot Rolls": {
+   "names": [
+    "Käsewurz'n",
+    "Cheese Wurzelbrot Rolls"
+   ],
+   "overview": [
+    "8 {0} {2} \n 2 {0} {3}",
+    "10 {0}",
+    "20 {0}",
+    "120 g",
+    "25 - 35 {0}",
+    "{4} 17 - 19 {0} {5} 220°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "350 g {22}",
+     "150 g {7}",
+     "12 g {9}",
+     "10 g {10}",
+     "18 g {23}",
+     "15 g {33}",
+     "5 g {20} {25}",
+     "7 g {14} {15} 15 g {16}",
+     "380 g {19} (28°C)",
+     "140 g {36} {38}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Am Ende der Knetzeit Käsewürfel langsam unterheben.",
+     "Anschließend 20 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine stark bemehlte Arbeitsfläche geben und Teigstücke zu je 120 g auswiegen.",
+     "Teigstücke locker rund wirken und dann zu länglichen Würsten formen.",
+     "In Roggenmehl wälzen und dann zu Wurz'n eindrehen.",
+     "Auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Blech legen und zugedeckt 25 - 35 Minuten bei Raumtemperatur gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 220°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Dunkelbraun backen."
+    ],
+    [
+     "Eng Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T2}",
+    "{T4}",
+    "{T5}",
+    "{T7}",
+    "{T11}"
+   ]
+  },
+  "Bacon Wurzelbrot Rolls": {
+   "names": [
+    "Speckwurz'n",
+    "Bacon Wurzelbrot Rolls"
+   ],
+   "overview": [
+    "8 {0} {2} \n 2 {0} {3}",
+    "10 {0}",
+    "20 {0}",
+    "120 g",
+    "25 - 35 {0}",
+    "{4} 17 - 19 {0} {5} 220°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "350 g {22}",
+     "150 g {7}",
+     "10 g {9}",
+     "10 g {10}",
+     "18 g {23}",
+     "15 g {33}",
+     "5 g {20} {25}",
+     "7 g {14} {15} 15 g {16}",
+     "380 g {19} (28°C)",
+     "140 g {37} {38}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Am Ende der Knetzeit Speckwürfel langsam unterheben.",
+     "Anschließend 20 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine stark bemehlte Arbeitsfläche geben und Teigstücke zu je 120 g auswiegen.",
+     "Teigstücke locker rund wirken und dann zu länglichen Würsten formen.",
+     "In Roggenmehl wälzen und dann zu Wurz'n eindrehen.",
+     "Auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Blech legen und zugedeckt 25 - 35 Minuten bei Raumtemperatur gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 220°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Dunkelbraun backen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T2}",
+    "{T4}",
+    "{T5}",
+    "{T7}"
+   ]
+  },
+  "Lye Bread Roll Sticks": {
+   "names": [
+    "Laugenstangerl",
+    "Lye Bread Roll Sticks"
+   ],
+   "overview": [
+    "3 {0} {2} \n 5 {0} {3}",
+    "8 {0}",
+    "15 {0}",
+    "90 g",
+    "5 {0} \n + 25 - 35 {0}",
+    "{4} 16 - 17 {0} \n {5} 180°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "450 g {7}",
+     "50 g {22}",
+     "10 g {9}",
+     "10 g {10}",
+     "10 g {23}",
+     "30 g {12} {13}",
+     "4 g {39}",
+     "7 g {14} {15} 15 g {16}",
+     "260 g {19} (23°C)",
+     "{41}",
+     "{8} {40} {20} {21}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 90 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 5 Minuten zugedeckt rasten lassen. Davor leicht flach drücken",
+     "Mit einem Rundholz zu länglichen Teigfladen ausrollen (etwa 15 x 10 groß)",
+     "Von oben mit der Hand einrollen, dabei am Ende des Teiges leicht ziehen.",
+     "Laugenstangen auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Blech setzen und etwas befeuchten",
+     "30 Minuten bei Raumtemperatur zugedeckt gehen lassen",
+     "Mit einem Pinsel mit Brezenlauge bestreichen. Dafür unbedingt Schutzhandschuhe und Schutzbrille aufsetzen!",
+     "Backofen reichtzeitig auf 180° vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Mit einem Messer jeden Teigling 2 bis 3 Mal schräg einschneiden.",
+     "Backen bis die Lauge eine dunkelbraune Farbe angenommen hat."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T7}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Pretzels": {
+   "names": [
+    "Laugenbrezen",
+    "Pretzels"
+   ],
+   "overview": [
+    "3 {0} {2} \n 5 {0} {3}",
+    "8 {0}",
+    "15 {0}",
+    "100 g",
+    "5 {0} \n + 25 - 35 {0}",
+    "{4} 16 - 17 {0} \n {5} 180°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "450 g {7}",
+     "50 g {22}",
+     "10 g {9}",
+     "10 g {10}",
+     "10 g {23}",
+     "30 g {12} {13}",
+     "4 g {39}",
+     "7 g {14} {15} 15 g {16}",
+     "260 g {19} (22°C)",
+     "{41}",
+     "{8} {40} {20} {21}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 100 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 5 Minuten zugedeckt rasten lassen.",
+     "Jedes Teigstück zu einer dünnen Wurst formen. Dabei sollte sie in der Mitte dicker und an den Enden etwas dünner sein.",
+     "Jeweils die dünnen Enden nehmen und miteinander locker verdrehen, sodass die Wurst einen Kreis bildet.",
+     "Teigstück mit den Enden nach vorne auf eine Oberfläche legen und den Kreis über die verdrehten Enden legen.",
+     "Die Brezeln auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Blech setzen und 30 Minuten zugedeckt gehen lassen.",
+     "Brezen gut mit Lauge bestreichen. Dafür unbedingt Schutzhandschuhe und Schutzbrille aufsetzen!",
+     "Backofen reichtzeitig auf 180° vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Die Laugenbrezen mit einem Messer im dicksten Teil leicht einschneiden und mit Salz und Kümmel bestreuen.",
+     "Backen bis die Lauge eine dunkelbraune Farbe angenommen hat."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T7}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Mini Baguette": {
+   "names": [
+    "Mini-Baguettes",
+    "Mini Baguette"
+   ],
+   "overview": [
+    "3 {0} {2} \n 5 {0} {3}",
+    "8 {0}",
+    "15 {0}",
+    "80 g",
+    "15 - 20 {0} \n + 25 - 35 {0}",
+    "{4} 17 {0} \n {5} 210°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "10 g {9}",
+     "10 g {10}",
+     "20 g {12} {13}",
+     "7 g {14} {15} 15 g {16}",
+     "260 g {19} (23°C)"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 80 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 15 - 20 Minuten zugedeckt rasten lassen.",
+     "Am End der Gehzeit, Teigkugeln mit der Hand etwas flach drücken.",
+     "Zwei gegenüberliegende Seiten eines Teiglings jeweils zur Mitte falten und mit dem Handballen zu länglichen Baguettes formen.",
+     "Auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen, mit Weizenmehl bestauben und leicht mit Wasser besprühen.",
+     "Teigstücke anschließend zugedeckt 25 - 35 Minuten gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 210°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Teiglinge vor dem Backen leicht mit Wasser besprühen und in den Backofen schieben.",
+     "Goldbraun backen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T9}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Spelt-Cereal-Rolls": {
+   "names": [
+    "Dinkel-Müsli-Laibchen",
+    "Spelt-Cereal-Rolls"
+   ],
+   "overview": [
+    "4 {0} {2} \n 6 {0} {3}",
+    "10 {0}",
+    "20 {0}",
+    "90 g",
+    "30 - 35 {0}",
+    "{4} 18 {0} \n {5} 200°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "60 g {42}",
+     "30 g {28}",
+     "20 g {30}",
+     "50 g {27}",
+     "120 g {29} \n {38}",
+     "150 g {19} (38°C)"],
+   [
+     "{72}",
+     "500 g {26}",
+     "10 g {9}",
+     "10 g {10}",
+     "10 g {44}",
+     "10 g {11}",
+     "10 g {12} {13}",
+     "120 g {45} {43}",
+     "7 g {14} {15} \n 15 g {16}",
+     "200 g {19} (22°C)",
+     "{30} {40} {46} {21}"
+    ]],
+   "preparation": [
+    [
+     "Für das Quellstück, alle Zutaten in eine Rührschüssel geben, durchmischen und mindestens 1 Stunde gehen lassen.",
+     "Nach der Gehzeit, die restlichen Zutaten genau einwiegen, zum Quellstück geben und den Teig wie angegeben kneten.",
+     "Anschließend 20 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 90 g auswiegen.",
+     "Teigstücke rund formen, leicht befeuchten und mit Cornflakes und Dinkelflocken bestreuen.",
+     "Auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen.",
+     "Teigstücke anschließend zugedeckt 30 - 35 Minuten gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 200°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Teiglinge vor dem Backen großzügig mit Wasser besprühen und in den Backofen schieben.",
+     "Goldbraun backen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T6}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Mini Pizza": {
+   "names": [
+    "Mini-Pizza",
+    "Mini Pizza"
+   ],
+   "overview": [
+    "10 {0} {3}",
+    "10 {0}",
+    "30 {0}",
+    "80 g",
+    "30 {0}",
+    "{4} 12 - 14 {0} \n {5} 240°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "400 g {7}",
+     "8 g {9}",
+     "5 g {10}",
+     "20 g {34}",
+     "7 g {14} {15} \n 15 g {16}",
+     "240 g {19} (30°C)",
+     "{47}",
+     "{48} {5} your discretion"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 30 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 80 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 30 Minuten zugedeckt rasten lassen.",
+     "Am End der Gehzeit, Teigkugeln mit der Hand etwas flach drücken.",
+     "Mit der Hand Teiglinge zu einer Pizza formen. Dabei von innen den Teig nach außen ziehen.",
+     "Fladen auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen, mit Tomatensauce bestreichen und nach Belieben belegen.",
+     "Backofen auf 240°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Goldbraun backen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T5}",
+    "{T10}",
+    "{T11}",
+    "{T14}"
+   ]
+  },
+  "Kipferl": {
+   "names": [
+    "Kipferl",
+    "Kipferl"
+   ],
+   "overview": [
+    "3 {0} {2} \n 7 {0} {3}",
+    "10 {0}",
+    "15 {0}",
+    "80 g",
+    "15 - 20 {0} \n + 25 - 35 {0}",
+    "{4} 15 {0} \n {5} 195°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "7 g {9}",
+     "5 g {10}",
+     "50 g {11}",
+     "50 g {12} {13}",
+     "14 g {14} {15} \n 30 g {16}",
+     "280 g {17} (36°C)"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 80 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 15 - 20 Minuten zugedeckt rasten lassen.",
+     "Am End der Gehzeit, Teigkugeln mit der Hand etwas flach drücken.",
+     "Mit einem Rundholz Teiglinge zu länglichen Fladen ausrollen (etwa 18 x 12 cm groß). Der Breite nach diesen Fladen langsam einrollen, dabei mit der anderen Hand an der Gegenseite anziehen.",
+     "Die Rolle schließlich etwas einbiegen und zu einem Kipferl formen.",
+     "Auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen und leicht mit Wasser besprühen.",
+     "Teigstücke anschließend zugedeckt 25 - 35 Minuten gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 195°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Teiglinge vor dem Backen gut mit Wasser besprühen und in den Backofen schieben.",
+     "Goldbraun backen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T8}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Poppy Seed Rolls": {
+   "names": [
+    "Mohnweckerl",
+    "Poppy Seed Rolls"
+   ],
+   "overview": [
+    "3 {0} {2} \n 7 {0} {3}",
+    "10 {0}",
+    "15 {0}",
+    "80 g",
+    "15 - 20 {0} \n + 25 - 35 {0}",
+    "{4} 15 {0} \n {5} 195°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "7 g {9}",
+     "5 g {10}",
+     "50 g {11}",
+     "50 g {12} {13}",
+     "14 g {14} {15} \n 30 g {16}",
+     "280 g {17} (36°C)",
+     "{50} {21}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 80 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 15 - 20 Minuten zugedeckt rasten lassen.",
+     "Jede Teigkugel zu einem 40 cm langen gleichmäßig dicken Strang formen. Mit diesem eine lockere Schlaufe bilden, wobei ein Ende nach der Schlaufe etwa doppelt so lange ist. [1]",
+     "Den längeren Strang über den anderen Strang legen und unter den nächsten Strang ziehen. [2]",
+     "Die übriggebliene Schlaufe nach links eindrehen und den gleichen Strang wie vorhin durch das so entstandene Loch stecken. [3]",
+     "Weckerl mit Wasser befeuchten und größzügig mit Mohn bestreuen.",
+     "Auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen und nochmal leicht mit Wasser besprühen.",
+     "Teigstücke anschließend zugedeckt 25 - 35 Minuten gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 195°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Teiglinge vor dem Backen erneut gut mit Wasser besprühen und in den Backofen schieben.",
+     "Goldbraun backen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T8}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Raisins Rolls": {
+   "names": [
+    "Rosinenweckerl",
+    "Raisins Rolls"
+   ],
+   "overview": [
+    "3 {0} {2} \n 7 {0} {3} \n 1 {1} {65} {42}",
+    "11 {0}",
+    "15 {0}",
+    "100 g",
+    "15 - 20 {0} \n + 25 - 35 {0}",
+    "{4} 18 {0} \n {5} 195°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "7 g {9}",
+     "5 g {10}",
+     "50 g {11}",
+     "50 g {12} {13}",
+     "14 g {14} {15} \n 30 g {16}",
+     "280 g {17} (36°C)",
+     "80 g {42}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Am Ende des Kentvorgangs langsam die Rosinen unterheben.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 100 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 15 - 20 Minuten zugedeckt rasten lassen.",
+     "Am End der Gehzeit, Teigkugeln mit der Hand etwas flach drücken.",
+     "Zwei gegenüberliegende Seiten eines Teiglings jeweils zur Mitte falten und mit dem Handballen zu länglichen Stangen formen.",
+     "Auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen und leicht mit Wasser besprühen.",
+     "Teigstücke anschließend zugedeckt 25 - 35 Minuten gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 195°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Teiglinge vor dem Backen leicht mit Wasser besprühen und in den Backofen schieben.",
+     "Goldbraun backen."
+    ],
+    []
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T8}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Honey Reingerl": {
+   "names": [
+    "Honigreingerl",
+    "Honey Reingerl"
+   ],
+   "overview": [
+    "3 {0} {2} \n 7 {0} {3}",
+    "10 {0}",
+    "15 {0}",
+    "80 g",
+    "15 - 20 {0} \n + 25 - 35 {0}",
+    "{4} 18 {0} \n {5} 195°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "7 g {9}",
+     "5 g {10}",
+     "50 g {11}",
+     "50 g {12} {13}",
+     "14 g {14} {15} \n 30 g {16}",
+     "280 g {17} (36°C)",
+     "{11}, {51} {40} {44} {15} {52}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 80 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 15 - 20 Minuten zugedeckt rasten lassen.",
+     "Am End der Gehzeit, Teigkugeln mit der Hand etwas flach drücken.",
+     "Mit einem Rundholz Teiglinge zu länglichen Fladen ausrollen (etwa 18 x 12 cm groß).",
+     "Zuerst Honig oder Ahornsirup auf dem Fladen verteilen, danach den Zucker und Zimt darüberstreuen.",
+     "Jeden Fladen locker einrollen, sodass kleine Hohlräume entstehen und die Füllung nicht rausgedrückt wird.",
+     "Diese Rolle dann zu einer Schnecke eindrehen und in eine kleine Backform stecken. Bei einer Metalform diese vorher einfetten.",
+     "Die Formen auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen und leicht mit Wasser besprühen.",
+     "Teigstücke anschließend zugedeckt 25 - 35 Minuten gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 195°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Teiglinge vor dem Backen gut mit Wasser besprühen und in den Backofen schieben.",
+     "Goldbraun backen und danach sofort aus der Form stürzen. Aufpassen, dass man sich an dem karamellisierten Zucker nicht verbrennt."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T8}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Buchteln": {
+   "names": [
+    "Buchteln",
+    "Buchteln"
+   ],
+   "overview": [
+    "3 {0} {2} \n 7 {0} {3}",
+    "10 {0}",
+    "15 {0}",
+    "80 g",
+    "15 - 20 {0} \n + 30 - 40 {0}",
+    "{4} 18 {0} \n {5} 195°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "7 g {9}",
+     "5 g {10}",
+     "50 g {11}",
+     "50 g {12} {13}",
+     "14 g {14} {15} \n 30 g {16}",
+     "280 g {17} (36°C)",
+     "{53} {54}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 80 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 15 - 20 Minuten zugedeckt rasten lassen.",
+     "Am End der Gehzeit, Teigkugeln mit der Hand etwas flach drücken.",
+     "Mit einem Rundholz Teiglinge zu quadratischen Fladen ausrollen (etwa 10 x 10 cm groß).",
+     "Mit einem Löffel Marillenmarmelade in die Mitte des Teigstücks geben und die Ränder mit Wasser bestreichen.",
+     "Alle 4 Enden des Fladens nach oben ziehen und zusammendrücken um diese zu Verschließen.",
+     "Teiglinge nebeneinander in eine rechteckige Backform geben.",
+     "Buchteln leicht mit Wasser besprühen und zugedeckt 30 - 40 Minten rasten lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 195°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Teiglinge vor dem Backen gut mit Wasser besprühen und in den Backofen schieben.",
+     "Goldbraun backen und in der Form auskühlen lassen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T8}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Brioche Kipferl": {
+   "names": [
+    "Brioche-Kipferl",
+    "Brioche Kipferl"
+   ],
+   "overview": [
+    "3 {0} {2} \n 7 {0} {3}",
+    "10 {0}",
+    "20 {0}",
+    "70 g",
+    "15 - 20 {0} \n + 20 - 30 {0}",
+    "{4} 14 {0} \n {5} 165°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "7 g {9}",
+     "75 g {11}",
+     "90 g {12} {13}",
+     "2 {55}",
+     "21 g {14} {15} \n 42 g {16}",
+     "{57}",
+     "{58}",
+     "210 g {17} (36°C)",
+     "1 {56} {60}",
+     "1 {59} {17} {60}",
+     "{66} {21}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 20 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 70 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 15 - 20 Minuten zugedeckt rasten lassen.",
+     "Am End der Gehzeit, Teigkugeln mit der Hand etwas flach drücken und anschließend zu 10 - 12 cm langen Strängen formen.",
+     "Diese Stränge schließlich etwas einbiegen und zu einem Kipferl formen.",
+     "Auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen und leicht mit Wasser besprühen.",
+     "Teigstücke anschließend zugedeckt 20 - 30 Minuten gehen lassen. Man kann den Teig auch im Backrohr bei 30°C gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 165°C Heißluft vorheizen.",
+     "Ei mit dem Schuss Milch verquirlen und die Kipferl damit gleichmäßig bestreichen.",
+     "Teiglinge vor dem Backen mit Hagelzucker bestreuen und in den Backofen schieben.",
+     "Goldbraun backen. Keinen Dampf verwenden."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T8}",
+    "{T11}"
+   ]
+  },
+  "Baby Brioche Buns": {
+   "names": [
+    "Brioche-Babys",
+    "Baby Brioche Buns"
+   ],
+   "overview": [
+    "3 {0} {2} \n 7 {0} {3}",
+    "10 {0}",
+    "20 {0}",
+    "70 g",
+    "15 - 20 {0} \n + 20 - 30 {0}",
+    "{4} 15 {0} \n {5} 165°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "7 g {9}",
+     "75 g {11}",
+     "90 g {12} {13}",
+     "2 {55}",
+     "21 g {14} {15} \n 42 g {16}",
+     "{57}",
+     "{58}",
+     "210 g {17} (36°C)",
+     "1 {56} {60}",
+     "1 {59} {17} {60}",
+     "{66} {21}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 20 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 70 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 15 - 20 Minuten zugedeckt rasten lassen.",
+     "Jede Teigkugel zu einem 15 cm langen gleichmäßig dicken Strang formen. Mit diesem eine lockere Schlaufe bilden, wobei ein Ende nach der Schlaufe etwa doppelt so lange ist. [1]",
+     "Den längeren Strang über den anderen Strang legen und unter den nächsten Strang ziehen. [2]",
+     "Die übriggebliene Schlaufe nach links eindrehen und den gleichen Strang wie vorhin durch das so entstandene Loch stecken. [3]",
+     "Auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen und leicht mit Wasser besprühen.",
+     "Teigstücke anschließend zugedeckt 20 - 30 Minuten gehen lassen. Man kann den Teig auch im Backrohr bei 30°C gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 165°C Heißluft vorheizen.",
+     "Ei mit dem Schuss Milch verquirlen und die Teiglinge damit gleichmäßig bestreichen.",
+     "Vor dem Backen gut mit Hagelzucker bestreuen und in den Backofen schieben.",
+     "Goldbraun backen. Keinen Dampf verwenden."
+    ],
+    [
+     "Eng Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T8}",
+    "{T11}"
+   ]
+  },
+  "Triple Brioche Braid": {
+   "names": [
+    "Brioche-Dreier-Striezel",
+    "Triple Brioche Braid"
+   ],
+   "overview": [
+    "3 {0} {2} \n 7 {0} {3}",
+    "10 {0}",
+    "20 {0}",
+    "40 g (3 {74})",
+    "15 - 20 {0} \n + 30 - 35 {0}",
+    "{4} 18 {0} \n {5} 165°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "7 g {9}",
+     "75 g {11}",
+     "90 g {12} {13}",
+     "2 {55}",
+     "21 g {14} {15} \n 42 g {16}",
+     "{57}",
+     "{58}",
+     "210 g {17} (36°C)",
+     "1 {56} {60}",
+     "1 {59} {17} {60}",
+     "{66} {21}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 20 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und 21 Teigstücke zu je 40 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 15 - 20 Minuten zugedeckt rasten lassen.",
+     "Jede Teigkugel zu einem 15 cm langen gleichmäßig dicken Strang formen.",
+     "Jeweils drei Stränge an einem Ende zusammendrücken und diese zusammenflechten.",
+     "Dazu die zwei äußeren Stränge in einem rechten Winkel zueinander legen und den mittleren näher zu dem rechten Strang legen.[1]",
+     "Den rechten äußeren Strang nun über den mittleren Strang legen, sodass links zwei Stränge beieiander und rechts ein Strang alleine liegt.[2]",
+     "Diesen prozess wiederholen und jeweils den äußeren der zwei nebeneinanderliegenden Stränge über den mittleren legen.[3]",
+     "Auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen und leicht mit Wasser besprühen.",
+     "Teigstücke anschließend zugedeckt 30 - 35 Minuten gehen lassen. Man kann den Teig auch im Backrohr bei 30°C gehen lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 165°C Heißluft vorheizen.",
+     "Ei mit dem Schuss Milch verquirlen und die Teiglinge damit gleichmäßig bestreichen.",
+     "Vor dem Backen gut mit Hagelzucker bestreuen und in den Backofen schieben.",
+     "Goldbraun backen. Keinen Dampf verwenden."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T8}",
+    "{T11}"
+   ]
+  },
+  "Curd Cheese Pockets": {
+   "names": [
+    "Brioche-Topfentaschen",
+    "Curd Cheese Pockets"
+   ],
+   "overview": [
+    "3 {0} {2} \n 7 {0} {3}",
+    "10 {0}",
+    "20 {0}",
+    "80 g",
+    "15 - 20 {0} \n + 30 - 35 {0}",
+    "{4} 20 {0} \n {5} 165°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "7 g {9}",
+     "75 g {11}",
+     "90 g {12} {13}",
+     "2 {55}",
+     "21 g {14} {15} \n 42 g {16}",
+     "{57}",
+     "{58}",
+     "210 g {17} (36°C)",
+     "1 {56} {60}",
+     "1 {59} {17} {60}",
+     "{66} {21}"
+    ],
+    [
+     "{73}",
+     "80 g {12} {13}",
+     "1 {56}",
+     "1 {55}",
+     "150 g {61}",
+     "8 g {64}",
+     "{57}",
+     "750 g {62}",
+     "75 g {63}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 80 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 15 - 20 Minuten zugedeckt rasten lassen.",
+     "Am End der Gehzeit, Teigkugeln mit der Hand etwas flach drücken.",
+     "Mit einem Rundholz Teiglinge zu quadratischen Fladen ausrollen (etwa 10 x 10 cm groß).",
+     "Für  die Fülle alle Zutaten, außer Topfen und Maisstärke, schaumig rühren. Topfen und Maisstärke zum Schluss unterrühren.",
+     "In die Mitte der Teigstücke je einen Löffel Topfenfülle setzen und die Teigränder mit Wasser bestreichen.",
+     "Die beiden gegenüberliegenden Ecken übereinander zusammenklappen.",
+     "Teiglinge auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen.",
+     "Leicht mit Wasser besprühen und zugedeckt 30 - 35 Minten rasten lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 165°C Heißluft vorheizen.",
+     "Ei mit dem Schuss Milch verquirlen und die Teiglinge damit gleichmäßig bestreichen.",
+     "Goldbraun backen. Keinen Dampf verwenden."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T8}",
+    "{T11}"
+   ]
+  },
+  "Poppy Seed Snail": {
+   "names": [
+    "Mohnschnecken",
+    "Poppy Seed Snail"
+   ],
+   "overview": [
+    "3 {0} {2} \n 7 {0} {3}",
+    "10 {0}",
+    "25 {0}",
+    "-",
+    "25 - 35 {0}",
+    "{4} 20 {0} \n {5} 195°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "7 g {9}",
+     "5 g {10}",
+     "50 g {11}",
+     "50 g {12} {13}",
+     "14 g {14} {15} \n 30 g {16}",
+     "280 g {17} (36°C)"
+    ],
+    ["{73}",
+     "340 g {50}, {68}",
+     "130 g {67} {69}",
+     "140 g {11}",
+     "16 g {51}",
+     "40 g {70}",
+     "16 g {64}",
+     "60 g {53}",
+     "20 g {44}",
+     "360 g {17}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend Teig auf eine leicht bemehlte Arbeitsfläche geben, zu einer Kugel formen und 25 Minuten zugedeckt rasten lassen.",
+     "In der Zwischenzeit für die Fülle alle Zutaten in einen Kochtopf geben und langsam erwärmen. Dabei immer wieder umrühren und danach auskühlen lassen.",
+     "Teig zu einem 50 x 30 cm großen Rechteck ausrollen, die Mohnfülle gleichmäßig darauf verteilen und zu einer Roulade einrollen.",
+     "Von der Roulade etwa 12 gleichmäßig dicke Scheiben abschneiden und diese auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen.",
+     "Leicht mit Wasser besprühen und zugedeckt 25 - 35 Minten rasten lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 195°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Goldbraun backen."
+    ],
+    [
+     "ENG Placeholder"
+    ]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T8}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Nut Crowns": {
+   "names": [
+    "Nusskronen",
+    "Nut Crowns"
+   ],
+   "overview": [
+    "3 {0} {2} \n 7 {0} {3}",
+    "10 {0}",
+    "25 {0}",
+    "-",
+    "25 - 35 {0}",
+    "{4} 20 {0} \n {5} 195°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "7 g {9}",
+     "5 g {10}",
+     "50 g {11}",
+     "50 g {12} {13}",
+     "14 g {14} {15} \n 30 g {16}",
+     "280 g {17} (36°C)"
+    ],
+    [
+     "{73}",
+     "340 g {45}, {68}",
+     "80 g {67} {69}",
+     "120 g {11}",
+     "16 g {51}",
+     "40 g {70}",
+     "16 g {64}",
+     "60 g {53}",
+     "20 g {44}",
+     "360 g {17}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend Teig auf eine leicht bemehlte Arbeitsfläche geben, zu einer Kugel formen und 25 Minuten zugedeckt rasten lassen.",
+     "In der Zwischenzeit für die Fülle alle Zutaten in einen Kochtopf geben und langsam erwärmen. Dabei immer wieder umrühren und danach auskühlen lassen.",
+     "Teig zu einem 50 x 30 cm großen Rechteck ausrollen, die Haselnussfülle gleichmäßig darauf verteilen und eine Hälfte des Teiges der Breite nach zur Mitte falten.",
+     "Danach die gegenüberliegende Seite zum anderen Ende falten. Mit einem Messer den Teig parallel in gleich breite Streifen schneiden.",
+     "In jeden der Streifen 4 bis 5 Zacken schneiden und diese in eine Halbmondform biegen",
+     "Die Kronen auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen.",
+     "Leicht mit Wasser besprühen und zugedeckt 25 - 35 Minten rasten lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 195°C Heißluft vorheizen. Für eine nasse Umluft hitzebeständiges Gefäß in den Backofen stellen, oder die nötige Funktion einschalten.",
+     "Vor dem Backen erneut gut mit Wasser besprühen.",
+     "Goldbraun backen."
+    ],
+    []
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T8}",
+    "{T10}",
+    "{T11}"
+   ]
+  },
+  "Curd Cheese Sticks": {
+   "names": [
+    "Topfenstangerl",
+    "Curd Cheese Sticks",
+    "Cheese Sticks"
+   ],
+   "overview": [
+    "3 {0} {2} \n 7 {0} {3}",
+    "10 {0}",
+    "15 {0}",
+    "80 g",
+    "15 - 20 {0} \n + 25 - 35 {0}",
+    "{4} 20 {0} \n {5} 195°C {6}"
+   ],
+   "ingredients": [[
+     "{71}",
+     "500 g {7}",
+     "7 g {9}",
+     "5 g {10}",
+     "50 g {11}",
+     "100 g {12} {13}",
+     "14 g {14} {15} \n 30 g {16}",
+     "240 g {17} (36°C)",
+     "1 {56} {60}",
+     "1 {59} {17} {60}"
+    ],
+    ["{73}",
+     "80 g {12} {13}",
+     "1 {56}",
+     "1 {55}",
+     "150 g {61}",
+     "8 g {64}",
+     "{57}",
+     "750 g {62}",
+     "75 g {63}"
+    ]],
+   "preparation": [
+    [
+     "Zutaten genau einwiegen und Teig wie angegeben kneten.",
+     "Anschließend 15 Minuten zugedeckt rasten lassen.",
+     "Teig auf eine leicht bemehlte Arbeitsfläche geben und Teigstücke zu je 80 g auswiegen.",
+     "Teigstücke rund formen und nochmals für 15 - 20 Minuten zugedeckt rasten lassen.",
+     "Am End der Gehzeit, Teigkugeln mit der Hand etwas flach drücken.",
+     "Mit einem Rundholz Teiglinge zu rechteckigen Fladen ausrollen (etwa 15 x 10 cm groß).",
+     "Für die Fülle alle Zutaten, außer Topfen und Maisstärke, schaumig rühren. Topfen und Maisstärke zum Schluss unterrühren.",
+     "Entlang der Längsseite der Teigstücke in der oberen Hälfte die Fülle verteilen. Teigränder mit Wasser bestreichen.",
+     "Die Teighälfte mit der Fülle zur Mitte klappen und danach die andere Hälfte des Teiges darüberlegen.",
+     "Teiglinge auf ein mit Backpapier oder einer Silikonmatte ausgelegtes Backblech legen.",
+     "Zugedeckt 25 - 35 Minten rasten lassen.",
+     "10 Minuten vor Ende der Gehzeit, Backofen auf 195°C Heißluft vorheizen.",
+     "Ei mit dem Schuss Milch verquirlen und die Teiglinge damit gleichmäßig bestreichen. Danach jedes der Stangerl mit einem Messer zwei Mal schräg einschneiden.",
+     "Goldbraun backen. Keinen Dampf verwenden."
+    ],
+    [
+     "Measure ingredients in and knead dough as instructed.",
+     "Let dough rest for 15 minutes.",
+     "Empty rested dough onto a lightly floured surface and split it into pieces weighing approximately 80 g each.",
+     "Shape the pieces roughly into a round shape and let them rest for another 15 to 20 minutes.",
+     "After they have rested, slightly flatten them.",
+     "Use a rolling pin to roll out the pieces into flat rectangles of approximately 15 by 10 cm in size.",
+     "In order to make the filling, add everything but the curd cheese and the corn starch into a container and mix them thoroughly. Add the curd cheese and corn starch towards the end and mix them in as well.",
+     "Spread the filling across the long side at the upper half of each dough piece. Lightly moisten the edges of the dough.",
+     "Fold the half of the dough containing the filling towards the middle and then fold the other half over it.",
+     "Put the pieces onto a baking tray lined with parchment paper or a heat-resistant baking mat and let them rest for another 25 to 35 minutes.",
+     "Pre-heat the oven to 195°C with ventilation 10 minutes before the dough has finished resting.",
+     "Mix the egg and the dash of milk well and spread it over the unbaked curd cheese sticks. Then make two diagonal cut across each of them.",
+     "Bake until golden. Do not use steam."
+    ],[
+    "Pesez les ingrédients et pétrissez la pâte comme indiqué.",
+    "Laisser la pâte reposer pendant 15 minutes.",
+    "Déposez la pâte réposée sur un plan de farine légérement fariné et séparez la en morceaux de 80g chacun.",
+    "Formez des pâtons ronds et laissez les reposer pendant 15 à 20 minutes.",
+    "Après le repos, aplatissez les légèrement avec la paume de la main.",
+    "Utilisez un rouleau à pâtisserie pour étaler les pâtons en rectangles d'environ 15 x 10cm.",
+    "Pour la garniture, mélangez vigoureusement tout les ingrédients à l'exception du fromage blanc et de la fécule de maïs. Ajoutez les à la fin avant de mélanger une dernière fois.",
+    "Répartissez la garniture sur la longueur de la moitié supérieure de chaque pâton. Humidifiez légèrement les coins de la pâte.",
+    "Repliez la moitié garnie ver le milieu avant de faire de même avec l'autre moitié.",
+    "Placez les pâtons sur une plaque de cuisson recouverte de papier sulfurisé ou d’un tapis de cuisson résistant à la chaleur et laissez les reposer encore 25 à 35 minutes.",
+    "Commencez à préchauffer le four à 190°C (avec ventilation) 10 minutes avant que les pâtons aient fini de reposer.",
+    "Mélangez l'oeuf avec un peu de lait et étalez la dorure sur la pâte. Faites 2 incisions diagonales sur chaque batonnet avant d'enfourner.",
+    "Cuire jusqu'à ce qu'ils soient dorés. Ne pas utiliser le mode vapeur."]
+   ],
+   "tags": [
+    "{T0}",
+    "{T4}",
+    "{T5}",
+    "{T8}",
+    "{T11}"
+   ]
+  }
+ },
+  "phrases": [
+    ["Minuten", "minutes", "minutes"],
+    ["Minute", "minute", "minute"],
+    ["langsam", "slowly", "lentement"],
+    ["etwas intensiver", "with more power", "avec plus d'intensité"],
+    ["ca.", "apprx.", "approx."],
+    ["bei", "at", "à"],
+    ["Heißluft", "fan-assisted", "avec ventilation"],
+    ["Weizenmehl Typ 480", "All-Purpose Wheat Flour", "Farine de blé tout usage"],
+    ["Grobes Salz", "Coarse Salt", "Gros Sel"],
+    ["Salz", "salt", "Sel"],
+    ["Gerstenmalzmehl", "Barley Malt Flour", "Farine d'orge malté"],
+    ["Kristallzucker", "Table Sugar", "Sucre Cristal"],
+    ["Butter", "Butter", "Beurre"],
+    ["(warm)", "(warm)", "(chaud)"],
+    ["Trockenhefe", "Dry Yeast", "Levure Sèche"],
+    ["oder", "or", "or"],
+    ["frische Hefe", "Fresh Yeast", "Levure Fraîche"],
+    ["Milch", "Milk", "Lait"],
+    ["(gekühlt)", "(cooled)", "froid"],
+    ["Wasser", "Water", "Eau"],
+    ["Kümmel", "Caraway", "Cumin"],
+    ["zum Bestreuen", "to sprinkle on top", "(à soupoudrer)"],
+    ["Roggenmehl Typ 960", "All-Purpose Rye Flour", "Farine de seigle tout usage"],
+    ["Roggensauerteig", "Rye sourdough", "Levain de seigle"],
+    ["Schmalz", "Lard", "Lard"],
+    ["ganz", "whole", "entier"],
+    ["Dinkelmehl Typ 700", "All-Purpose Spelt Flour", "Farine d'épeautre tout usage"],
+    ["Sonnenblumenkerne", "Sunflower Seeds", "Graines de tournesol"],
+    ["Haferflocken", "Rolled Oats", "Flocons d'avoine"],
+    ["Dörrpflaumen", "Dried Plums", "Prunes séchées"],
+    ["Dinkelflocken", "Rolled Spelt", "Epeautre roulé"],
+    ["Kürbiskerne", "Roasted Pumpkin Seeds", "Graines de citrouille grillées"],
+    ["Brotgewürz", "Dark Bread Spicing", "Epices pour pain noir"],
+    ["Speiseöl", "Cooking Oil", "Huile de cuisson"],
+    ["Olivenöl", "Olive Oil", "Huile d'olive"],
+    ["Fenchel", "Fennel", "Fenouil"],
+    ["Emmentaler", "Emmental Cheese", "Emmental"],
+    ["Speck", "Bacon", "Bacon"],
+    ["in Würfel geschnitten", "diced", "en cubes"],
+    ["Suppenwürfel", "Stock Cube", "Cube de bouillon"],
+    ["und", "and", "et"],
+    ["Brezenlauge", "Lye", "Bicarbonate de Soude"],
+    ["Rosinen", "Raisins", "Raisins"],
+    ["(gehackt)", "(chopped)", "hachés"],
+    ["Honig", "Honey", "Miel"],
+    ["Haselnüsse", "Hazelnuts", "Noisette"],
+    ["Cornflakes", "Cereal", "Céréales"],
+    ["Tomatensauce", "Tomato Sauce", "Sauce Tomate"],
+    ["Belag", "Toppings", "Garnitures"],
+    ["nach Belieben", "at your discretion", "à volonté"],
+    ["Mohn", "Poppy Seeds", "Graines de coquelicot"],
+    ["Zimt", "Cinnamon", "Cannelle"],
+    ["Ahornsirup", "Maple Syrup", "Sirop d'érable"],
+    ["Marmelade", "Jam", "Confiture"],
+    ["zum Befüllen", "as filling", "comme remplissage"],
+    ["Eidotter", "Egg yolk", "Jaune d'oeuf"],
+    ["Ei", "Egg", "Oeuf"],
+    ["Abrieb einer halben Zitrone", "One half of a lemon's zest", "Le zeste d'un demi citron"],
+    ["Abrieb einer halben Orange", "One half of an orange's zest", "Le zeste d'une demi orange"],
+    ["Schuss", "dash of", "une pincée de"],
+    ["zum Bestreichen", "to spread over", "pour la dorure"],
+    ["Staubzucker", "Powdered Sugar", "Sucre en poudre"],
+    ["Topfen", "Curd Cheese", "Fromage blanc"],
+    ["Maisstärke", "Corn Starch", "Fécule de maïs"],
+    ["Vanillezucker", "Vanilla Sugar", "Sucre vanillé"],
+    ["für", "for", "pour"],
+    ["Hagelzucker", "Coarse Sugar", "Pépites de sucre"],
+    ["süße Brösel", "Ground Sweet Breadcrumbs", "Miettes de pain sucrées"],
+    ["gemahlen", "ground", "sol"],
+    ["(Aus Biskotten)", "(From Sponge Fingers)", "(De Biscottes)"],
+    ["Inländerrum", "Spiced Rum", "Rhum épicé"],
+    ["Hauptteig", "Main Dough", "Pâte principale"],
+    ["Quellstück", "Poolish", "Poolish"],
+    ["Fülle", "Filling", "Garniture"],
+    ["Teile pro Stück", "Parts per Piece", "Par pièce"]
+  ],
+  "config": [
+    ["Knetzeit:", "Kneading time:", "Temps de pétrissage:"],
+    ["Insgesamt:", "Total:", "Total:"],
+    [
+      "Teigruhe nach dem Kneten",
+      "Rest time after kneading",
+      "Temps de repos après pétrissage"
+    ],
+    ["Teiggewicht pro Stück:", "Weight per piece:", "Poids par pièce:"],
+    ["Gehzeit:", "Resting time:", "Temps de repos:"],
+    ["Backzeit:", "Baking time:", "Temps de cuisson:"],
+    ["Löschen", "Clear", "Supprimer"],
+    ["Suche", "Search", "Recherche"],
+    ["Nach Anfangsbuchstabe:", "By starting letter:", "Par première lettre"],
+    ["Nach Kategorie:", "By category:", "Par catégorie"],
+    ["Verlauf:", "History:", ""]
+  ],
+  "alphabet": [["Ä", "Ü", "Ö"], [], ["É", "È", "Ê", "Î", "Ô", "Ç"],
+               ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]],
+  "tags": [ 
+    [0, 1, 2, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+    [], 
+    [3, 4, 5, 6, 7], 
+    [], 
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 
+    [4, 11], 
+    [3, 4, 5, 6, 7, 8, 9], 
+    [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 
+    [10], 
+    [0, 1, 2, 4, 5, 8, 9, 11, 12, 13, 14, 15, 16, 17, 22, 23], 
+    [0, 1, 2, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 
+    [], 
+    [], 
+    [12]
+  ],
+  "tag_names": [
+    ["Weißbrot", "White Bread", "Pain Blanc"],
+    ["Schwarzbrot", "Dark Bread", "Pain Noir"],
+    ["Mischbrot", "Mixed", "Pain Mixte"],
+    ["Brotlaib", "Bread Loaf", "Miche de Pain"],
+    ["Brötchen", "Bread Rolls", "Petits Pains"],
+    ["Weizen", "Wheat", "Blé"],
+    ["Dinkel", "Spelt", "Epeautre"],
+    ["Roggen", "Rye", "Seigle"],
+    ["Süßspeise", "Pastry", "Pâtisserie"],
+    ["Baguette", "Baguette", "Baguette"],
+    ["Vegan", "Vegan", "Vegan"],
+    ["Vegetarisch", "Vegetarian", "Végétarien"],
+    ["Glutenfrei", "Gluten free", "Sans Gluten"],
+    ["Burger", "Burger", "Burger"],
+    ["Pizza", "Pizza", "Pizza"]
+  ],
+  "names": [
+    ["Kaisersemmeln", "Steirische Langsemmel", "Salzstangerl", "Wachauer Laibchen", "Kornstangerl", "Gewürzvinschgerl", 
+     "Käsewurz'n", "Speckwurz'n", "Laugenstangerl", "Laugenbrezen", "Mini-Baguettes", "Dinkel-Müsli-Laibchen", "Mini-Pizza",
+     "Kipferl", "Mohnweckerl", "Rosinenweckerl", "Honigreingerl", "Buchteln", "Brioche-Kipferl", "Brioche-Babys", "Brioche-Dreier-Striezel",
+     "Brioche-Topfentaschen", "Mohnschnecken", "Nusskronen", "Topfenstangerl"],
+    ["Vienna Roll", "Styrian Bread Roll", "Salt Sticks", "Wachau Roll", 
+    "Cereal Rolls", "Spiced Vinschgau Roll", "Cheese Wurzelbrot Rolls", "Bacon Wurzelbrot Rolls", 
+    "Lye Bread Roll Sticks", "Pretzels", "Mini Baguette", "Spelt-Cereal-Rolls", "Mini Pizza", 
+    "Kipferl", "Poppy Seed Rolls", "Raisins Rolls", "Honey Reingerl", "Buchteln", "Brioche Kipferl", 
+    "Baby Brioche Buns", "Triple Brioche Braid", "Curd Cheese Pockets", "Poppy Seed Snail", "Nut Crowns", "Curd Cheese Sticks"],
+    ["Rosette impériale", "Petit pain de Styrie", "Sticks salés", "Pain de Wachau", "Pains aux céréales", "Pain au cumin du val Venosta",
+     "Petits pains torsadés au fromage", "Petits pains torsadés au bacon", "Mauricette", "Bretzels", "Mini Baguette",
+     "Petits pains d'épeautre aux céréales", "Mini Pizza", "Kipferl (Biscuits en forme de lune)", "Petits pains aux graines de coquelicot",
+     "Petits pains aux raisins", "Reingerl au miel", "Buchteln", "Kipferl brioché", "Petits pains briochés", "Triple Pain brioché",
+     "Pockets au fromage", "Roulés aux graines de coquelicot", "Couronnes aux noix", "Cheese Sticks" ]],
+ "template": {
+  "name": [],
+  "overview": [
+   "3 Minuten langsam \n 7 Minuten etwas intensiver",
+   "10 Minuten",
+   "15 Minuten",
+   "80 g",
+   "15 - 20 Minuten \n + 30 - 40 Minuten",
+   "ca. 18 Minuten \n bei 195°C Heißluft"
+  ],
+  "ingredients": 
+    [[
+    "Hauptteig",
+    "500 g Weizenmehl Typ 480",
+    "7 g Salz",
+    "5 g Gerstenmalzmehl",
+    "50 g Kristallzucker",
+    "50 g Butter (warm)",
+    "14 g Trockenhefe oder \n 30 g frische Hefe",
+    "280 g Milch (36°C)"],
+  [
+    "Poolish"
+  ]],
+  "preparation": [
+   [],
+   []
+  ],
+  "tags": []
+ }
+}
