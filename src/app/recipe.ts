@@ -29,3 +29,8 @@ export enum Lang {
     en,
     fr
 }
+
+export enum Screen {
+    notHandheld,
+    handheld
+}

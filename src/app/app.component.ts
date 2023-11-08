@@ -7,3 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 }
+
+/* /(polyfills|vendor|styles|main|runtime).js/ */

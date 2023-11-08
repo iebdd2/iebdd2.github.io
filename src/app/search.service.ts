@@ -5,6 +5,12 @@ import { Names } from './recipe';
 @Injectable({
   providedIn: 'root'
 })
+
+
+/*               Search Service                          */
+/* Find and replace strings with corresponding           */
+/* IDs or vice versa                                     */
+
 export class SearchService {
 
   constructor(private LoadDataService: LoadDataService) { }
@@ -23,7 +29,7 @@ export class SearchService {
     let start_str: string = '';
     (start) ? start_str = '^' : null;
     if (search.length) {
-      let bound: number = this.names.name[lang].length;
+      const bound: number = this.names.name[lang].length;
       const regexp = new RegExp(start_str + this.regexEscape(search), 'i');
       for(var index = 0 ; index < bound ; index++) {    
         if (regexp.test(this.names.name[lang][index])){
@@ -32,6 +38,10 @@ export class SearchService {
       }
     }
     return results;
+  }
+
+  isLetter(string: string): boolean {
+    return new RegExp(/\p{L}+/v).test(this.regexEscape(string));
   }
 
   getNames(): void {

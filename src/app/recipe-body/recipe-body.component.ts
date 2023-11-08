@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
-import { Recipe, Config, Names, State, Lang } from '../recipe';
+import { Component, OnDestroy } from '@angular/core';
+import { Location } from '@angular/common';
+import { Router} from '@angular/router';
+import { Subject, takeUntil } from 'rxjs';
+import { Recipe, Config, Names, State, Lang, Screen } from '../recipe';
 import { LoadDataService  } from '../load-data.service';
 import { SearchService } from '../search.service';
 import { LangService } from '../lang.service';
 import { ReplacementService } from '../replacement.service';
 import { HistoryService } from '../history.service';
+import { BreakpointService } from '../breakpoint.service';
 
 @Component({
   selector: 'app-recipe-body',
@@ -12,21 +16,29 @@ import { HistoryService } from '../history.service';
   styleUrls: ['./recipe-body.component.css'],
 })
 
-export class RecipeBodyComponent {
+export class RecipeBodyComponent implements OnDestroy {
   
   constructor(private LoadDataService: LoadDataService, 
               private SearchService: SearchService,
               private LangService: LangService,
               private ReplacementService: ReplacementService,
-              private HistoryService: HistoryService)
+              private HistoryService: HistoryService,
+              private Router: Router,
+              private Location: Location,
+              private BreakpointService: BreakpointService)
               { 
                 this.lang = Lang.de;
+                this.screenSize = 0;
               }
-
+  
+  destroyed = new Subject<void>();
+  screenSize: number;
   lang: number;
   states: Array<boolean> = Array(4).fill(false);
+  langMap = new Map<number, string>([[Lang.de,"de"], [Lang.en, "en"], [Lang.fr, "fr"]]);
   results: Array<number> = [];
   history: Array<number> = [];
+  route: string = '';
   search: string = '';
   recipe: Recipe = {
     names: [],
@@ -46,7 +58,9 @@ export class RecipeBodyComponent {
   };
 
   searchView(search: string): void {
+    console.log(search);
     if(search.length) {
+      this.Router.navigate([this.langMap.get(this.lang)], {queryParams: {s: search}});
       this.search = search;
       this.setState(State.search);
       this.filterSearch(search, false);
@@ -54,6 +68,7 @@ export class RecipeBodyComponent {
   }
 
   mainView(): void {
+    this.Router.navigate([this.langMap.get(this.lang), '']);
     this.setState(2);
   }
 
@@ -62,10 +77,16 @@ export class RecipeBodyComponent {
     this.states[state] = true;
   }
 
-  changeRecipe(recipe: number) {
+  recipeView(recipe: number) {
+    this.Router.navigate([this.langMap.get(this.lang)], {queryParams: {r: recipe}});
     this.addRecord(recipe);
     this.setState(State.recipe);
     this.getRecipe(recipe);
+  }
+
+  allView() {
+    this.setState(State.all);
+    this.Router.navigate([this.langMap.get(this.lang), 'all'], );
   }
 
   isNotEmpty(string: string): boolean {
@@ -87,34 +108,42 @@ export class RecipeBodyComponent {
 
   replaceElement(element: string) {
     return this.ReplacementService.replaceElement(element, this.lang);
+    
   }
 
   getConfig(): void {
     this.LoadDataService.getConfig()
+      .pipe(takeUntil(this.destroyed))
       .subscribe(config => this.config = config);
   }
 
   getRecipe(id: number): void {
     this.LoadDataService.getRecipe(id)
+      .pipe(takeUntil(this.destroyed))
       .subscribe(recipe => this.recipe = recipe);
   }
 
   getNames(): void {
     this.LoadDataService.getNames()
+      .pipe(takeUntil(this.destroyed))
       .subscribe(names => this.names = names);
   }
 
   getLang(): void {
-    this.LangService.getLang().subscribe(lang => {
+    this.LangService.getLang()
+    .pipe(takeUntil(this.destroyed))
+    .subscribe(lang => {
         this.lang = lang;
         if (this.results.length != 0 && this.search.length != 0) {
           this.filterSearch(this.search, false)
         }
+        this.Router.navigate([this.langMap.get(this.lang)], {queryParamsHandling: 'merge'});
       })
   }
 
   getHistory(): void {
     this.HistoryService.getHistory()
+      .pipe(takeUntil(this.destroyed))
       .subscribe(history => this.history = history);
   }
 
@@ -130,11 +159,51 @@ export class RecipeBodyComponent {
     this.results = this.SearchService.filterSearch(search, this.lang, start);
   }
 
+  getRoute(): void {
+    const route: string = this.Location.path();
+    const result = new RegExp(/[/?]?([sralSRAL]{1,3})(?:=(\w+|[0-9]{1,3}))?/).exec(route);
+    if (result === null) {
+      this.defaultRoute();
+      return;
+    }
+    switch(result![1]) {
+      case 'r':
+        (!isNaN(+result![2])) ? this.recipeView(+result[2]) : this.defaultRoute();
+        break;
+      case 's':
+        (this.SearchService.isLetter(result![2])) ? this.searchView(result[2]) :  this.defaultRoute();
+        break;
+      case 'all': 
+        this.allView();
+      break;
+      default:
+        this.defaultRoute();
+        break;
+    }
+  }
+
+  defaultRoute(): void {
+    this.Router.navigate([this.langMap.get(this.lang)]);
+    this.setState(State.main);
+  }
+
+  getSize(): void {
+    this.BreakpointService.getSize()
+    .pipe(takeUntil(this.destroyed))
+    .subscribe(screenSize => this.screenSize = screenSize);
+  }
+
   ngOnInit(): void {
-    this.getConfig();
-    this.setState(2);
-    this.getNames();
-    this.getLang();
     this.getHistory();
+    this.getConfig();
+    this.getLang();
+    this.getRoute();
+    this.getNames();
+    this.getSize()
+  }
+
+  ngOnDestroy() {
+    this.destroyed.next();
+    this.destroyed.complete();
   }
 }

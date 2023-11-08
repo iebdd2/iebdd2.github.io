@@ -19,6 +19,24 @@ h1 {
   align-items: baseline;
 }
 
+@media (min-aspect-ratio: 2) {
+
+  .history-delete:hover, .all-item:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  .search-item:hover, .history-item:hover, .all:hover {
+    cursor: pointer;
+    filter: invert(40%);
+  }
+
+  .letter:hover, .tag:hover, .history-item:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+  }
+}
+
 /* History */
 
 .history {
@@ -34,19 +52,8 @@ h1 {
   border: 2px solid black;
 }
 
-.history-delete:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-}
-
 .history-item {
   padding: 0.5vh 0 0 0;
-}
-
-.history-item:hover {
-  cursor: pointer;
-  filter: invert(40%);
-  transform: scale(1.10);
 }
 
 /* Recipe View */
@@ -88,6 +95,10 @@ ol > li::marker {
   font-weight: bold;
 }
 
+.ingredients {
+  max-width: 30vw;
+}
+
 /* Search View */
 
 .search-container {
@@ -103,11 +114,6 @@ ol > li::marker {
   width: 20vw;
 }
 
-.search-item:hover {
-  cursor: pointer;
-  filter: invert(40%);
-}
-
 /* Main View */
 
   .main {
@@ -120,24 +126,30 @@ ol > li::marker {
   }
 
   .main-item {
-    padding: 3vh 0 0 0;
+    margin: 3vh 0 0 0;
     justify-content: start;
     gap: 10px 10px;
   }
 
   .help {
-    font-size: 1.5em;
-    font-weight: 800;
     text-align: left;
     justify-content: left;
   }
 
-  /* Main Letters */
-
-  .letter:hover {
-    transform: scale(1.10);
-    cursor: pointer;
+  .help, .all {
+    font-size: 1.5em;
+    font-weight: 800;
   }
+
+  .all {
+    border: 2px solid black;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Main Letters */
 
   .letter {
     border: 1px solid black;
@@ -147,30 +159,17 @@ ol > li::marker {
     position: relative;
     text-align: center;
     transition: 0.15s;
-    font-weight: 700;
-  }
-
-  .pressed {
-    background: #a10000;
-    outline: none;
-    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
-        -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
-            box-shadow: inset 0px 0px 5px #c1c1c1;
+    font-weight: 600;
   }
 
   /* Main Tags */
 
   .tag {
-    padding: 5px;
+    padding: 7px;
     border: 1px solid black;
-    margin: 2px;
-    font-weight: 700;
+    margin: 1px;
+    font-weight: 600;
     transition: 0.15s;
-  }
-
-  .tag:hover {
-    transform: scale(1.10);
-    cursor: pointer;
   }
 
   .tag-container {
@@ -203,6 +202,8 @@ ol > li::marker {
     width: 30vw;
   }
   .form__field {
+    width: 200px;
+    height: 5vh;
     font-family: inherit;
     width: 100%;
     border: 0;
@@ -249,6 +250,75 @@ ol > li::marker {
     color: black;
     font-weight: 800;
   }
+
+  /* All Recipe View */
+
+  .all-recipes {
+    position: absolute;
+    width: 60vw;
+    left: 20vw;
+    right: 20vw;
+    top: 10vh;
+  }
+
+  .all-item {
+    padding: 7px;
+    border: 1px solid black;
+    margin: 3px;
+    font-weight: 600;
+    transition: 0.15s;
+  }
+
+  /* Print View */
+
+@media print {
+  .history {
+    display: none;
+  }
+  h1 {
+    padding: 0;
+  }
+
+  .recipe {
+    max-width: revert;
+    justify-content: space-evenly;
+  }
+}
+
+/* Mobile View */
+
+@media only screen and  (max-aspect-ratio: 2) {
+  .history {
+    display: none;
+  }
+
+  .recipe {
+    max-width: 90vw;
+    left: 5vw;
+    right: 5vw;
+  }
+
+  .overview, .ingredients {
+    width: 45vw;
+  }
+
+  .preparation {
+    width: 70vw;
+  }
+
+  .main, .main_search {
+    width: 45vw;
+    left: 5vw;
+    top: 10vh;
+  }
+
+  .form__field {
+    height: 3vh;
+    padding: revert;
+  }
+
+}
+
   
  
   

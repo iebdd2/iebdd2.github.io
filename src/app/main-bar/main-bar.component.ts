@@ -1,10 +1,11 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, OnDestroy } from '@angular/core';
 import { Names, Lang, Config } from '../recipe';
 import { LoadDataService  } from '../load-data.service';
 import { SearchService } from '../search.service';
 import { LangService } from '../lang.service';
 import { ReplacementService } from '../replacement.service';
-
+import { Subject, takeUntil } from 'rxjs';
+import { BreakpointService } from '../breakpoint.service';
 
 
 @Component({
@@ -12,12 +13,13 @@ import { ReplacementService } from '../replacement.service';
   templateUrl: './main-bar.component.html',
   styleUrls: ['./main-bar.component.css']
 })
-export class MainBarComponent {
+export class MainBarComponent implements OnDestroy {
 
 constructor(private LoadDataService: LoadDataService, 
             private SearchService: SearchService,
             private LangService: LangService,
-            private ReplacementService: ReplacementService) 
+            private ReplacementService: ReplacementService,
+            private BreakpointService: BreakpointService) 
             {
               this.lang = Lang.de;
             }
@@ -26,6 +28,8 @@ title = 'Recipe Book';
 search: string = '';
 lang: number;
 results: number[] = [];
+destroyed = new Subject<void>();
+screenSize: number = 0;
 
 names: Names = {
   name: []
@@ -38,9 +42,25 @@ config: Config = {
   tag_names: []
 };
 
-@Output() changeRecipe = new EventEmitter<any>;
-@Output() searchView = new EventEmitter<any>;
-@Output() mainView = new EventEmitter<any>;
+@Output() recipeEvent = new EventEmitter<number>();
+@Output() searchEvent = new EventEmitter<string>();
+@Output() mainEvent = new EventEmitter<void>();
+
+recipeView(recipe: number) {
+  console.log(this.screenSize);
+  (this.screenSize) ? (this.results.length = 0, this.search = '') : null;
+  this.recipeEvent.emit(recipe);
+}
+
+searchView(search: string) {
+  (this.screenSize) ? (this.results.length = 0, this.search = '') : null;
+  this.searchEvent.emit(search);
+}
+
+mainView() {
+  (this.screenSize) ? (this.results.length = 0, this.search = '') : null;
+  this.mainEvent.emit();
+}
 
 clearSearch() {
   this.results.length = 0;
@@ -53,11 +73,13 @@ replaceId(id: number): string {
 
 getNames(): void {
   this.LoadDataService.getNames()
+    .pipe(takeUntil(this.destroyed))
     .subscribe(names => this.names = names);
 }
 
 getConfig(): void {
   this.LoadDataService.getConfig()
+    .pipe(takeUntil(this.destroyed))
     .subscribe(config => this.config = config);
 }
 
@@ -71,16 +93,33 @@ setLang(lang: string): void {
 
 getLang(): void {
   this.LangService.getLang()
+    .pipe(takeUntil(this.destroyed))
     .subscribe(lang => {
       this.lang = lang;
       (this.results) ? this.filterSearch(this.search, false) : null;
     });
 }
 
+getSize(): void {
+  this.BreakpointService.getSize()
+  .pipe(takeUntil(this.destroyed))
+  .subscribe(screenSize => this.screenSize = screenSize);
+}
+
+printRecipe() {
+  window.print();
+}
+
 ngOnInit(): void {
   this.getNames();
   this.getConfig();
   this.getLang();
+  this.getSize();
+}
+
+ngOnDestroy() {
+  this.destroyed.next();
+  this.destroyed.complete();
 }
 
 }

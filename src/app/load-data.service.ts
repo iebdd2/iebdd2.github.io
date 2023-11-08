@@ -6,19 +6,24 @@ import { Observable, of } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
+/*               Load Data Service                       */
+/* Loads required data from the JSON file                */
+/* and distributes it to the other modules               */
+
 export class LoadDataService {
   constructor(
     ) { }
   json_data = JSON.parse(JSON.stringify(data));
   
   getRecipe(id: number): Observable<Recipe> {
-    let recipe_name: string = this.json_data['names'][1][id];
+    const recipe_name: string = this.json_data['names'][1][id];
     const recipe = of(this.json_data['Recipes'][recipe_name]);
     return recipe;
   }
 
   getConfig(): Observable<Config> {
-    let config: Config = {
+    const config: Config = {
       phrases: this.json_data['phrases'],
       config: this.json_data['config'],
       tags: this.json_data['tags'],
@@ -29,7 +34,7 @@ export class LoadDataService {
   }
 
   getNames(): Observable<Names> {
-    let names: Names = {
+    const names: Names = {
       name: this.json_data['names']
     }
     return of(names);

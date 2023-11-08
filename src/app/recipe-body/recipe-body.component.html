@@ -1,9 +1,9 @@
-<app-main-bar (changeRecipe)="changeRecipe($event)" (searchView)="searchView($event)" (mainView)="mainView()"></app-main-bar>
+<app-main-bar (recipeEvent)="recipeView($event)" (searchEvent)="searchView($event)" (mainEvent)="mainView()"></app-main-bar>
 
 <div class="history" *ngIf="this.history.length">
-    <div style="font-size:1.5em"><strong>{{this.config.config[10][this.lang]}}</strong></div>
+    <div style="font-size:1.5em"><strong>{{this.config.config[10][this.lang]}}:</strong></div>
     <div class="history-delete" (click)="deleteRecords()">{{this.config.config[6][this.lang]}}</div>
-    <div class="history-item" *ngFor="let history of this.history" (click)="changeRecipe(history)">{{replaceId(history)}}</div>
+    <div class="history-item" *ngFor="let history of this.history" (click)="recipeView(history)">{{replaceId(history)}}</div>
 </div>
 
 <div *ngIf="this.states[0]">
@@ -15,7 +15,7 @@
                 <div class="overview-header" *ngIf="i<5">{{config.config[i+1][lang]}}<br></div>
                 </div>
             </div>
-        <div style="max-width:30vw;">
+        <div class="ingredients">
             <div class="recipe-item">
                 <div><strong>{{replaceElement(recipe.ingredients[0][0])}}</strong><br></div>
                 <div *ngFor="let recipe of recipe.ingredients[0] | slice:1;">{{replaceElement(recipe)}}<br></div>
@@ -29,13 +29,12 @@
             <li *ngFor="let recipe of recipe.preparation[lang]">{{recipe}}</li>
         </ol>
     </div>
-
 </div>
 
 <div *ngIf="this.states[1]">
-    <h1>{{this.config.config[6][this.lang]}}: {{this.search}}</h1>
-    <div class="flex search-container" style="margin-left: 15vw;margin-right: 15vw;">
-        <div class="search-item" *ngFor="let result of this.results" (click)="changeRecipe(result)">{{replaceId(result)}}</div>
+    <h1>{{this.config.config[7][this.lang]}}: {{this.search}}</h1>
+    <div class="flex search-container" style="margin-left: 17vw;margin-right: 17vw;">
+        <div class="search-item" *ngFor="let result of this.results" (click)="recipeView(result)">{{replaceId(result)}}</div>
     </div>
 </div>
 
@@ -45,6 +44,7 @@
             <input type="input" class="form__field" placeholder="Name" name="name" id='name' [(ngModel)]="this.search" (input)="filterSearch(this.search)"/>
             <label for="name" class="form__label">{{this.config.config[7][this.lang]}}</label>
         </div>
+        <div class="main-item all flex" (click)="allView()">{{this.config.config[11][this.lang]}}</div>
         <div class="main-item help flex">{{this.config.config[8][this.lang]}}</div>
         <div class="flex main-item">
             <ng-container *ngFor="let letter of this.config.alphabet[this.config.alphabet.length - 1].concat(this.config.alphabet[this.lang])">
@@ -59,11 +59,11 @@
         </div>
     </div>
     <div class="search-container main_search">
-        <div class="search-item" *ngFor="let result of this.results" (click)="changeRecipe(result)">{{replaceId(result)}}</div>
+        <div class="search-item" *ngFor="let result of this.results" (click)="recipeView(result)">{{replaceId(result)}}</div>
     </div>
 </div>
 
-<div *ngIf="this.states[3]">
-
+<div *ngIf="this.states[3]" class="all-recipes flex">
+    <div class="main-item all-item" *ngFor="let name of this.names.name[this.lang]; index as i" (click)="recipeView(i)">{{replaceId(i)}}</div>
 </div>
 

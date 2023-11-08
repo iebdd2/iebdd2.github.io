@@ -1,18 +1,25 @@
-import { Injectable, HostListener } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class HistoryService {
+
+
+
+/*               History Service                         */
+/* Maintains the history of accessed recipes             */
+/* and adds deletes and saves them per session           */
+
+
+export class HistoryService{
 
   constructor() { }
 
   history: Array<number> = [];
   loaded_history: Array<number> = [];
-  
-  @HostListener('window:beforeunload', [ '$event'])
-  beforeUnloadHandler() {
+
+  saveRecord() {
     localStorage.setItem('history', JSON.stringify(this.history));
   }
 

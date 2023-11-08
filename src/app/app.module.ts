@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RecipeBodyComponent } from './recipe-body/recipe-body.component';
 import { MainBarComponent } from './main-bar/main-bar.component';
+import { LayoutModule } from '@angular/cdk/layout';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { MainBarComponent } from './main-bar/main-bar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
