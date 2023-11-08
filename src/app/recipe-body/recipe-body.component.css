@@ -306,9 +306,15 @@ ol > li::marker {
     width: 70vw;
   }
 
-  .main, .main_search {
+  .main {
     width: 45vw;
     left: 5vw;
+    top: 10vh;
+  }
+
+  .main_search {
+    width: 45vw;
+    right: 5vw;
     top: 10vh;
   }
 
