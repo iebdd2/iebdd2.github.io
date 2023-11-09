@@ -288,9 +288,6 @@ ol > li::marker {
 /* Mobile View */
 
 @media only screen and  (max-aspect-ratio: 2) {
-  .history {
-    display: none;
-  }
 
   .recipe {
     max-width: 90vw;

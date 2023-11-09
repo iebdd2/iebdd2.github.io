@@ -1,11 +1,12 @@
-import { Component, Output, EventEmitter, OnDestroy } from '@angular/core';
+import { Component, Output, EventEmitter, OnDestroy, ViewChild } from '@angular/core';
 import { Names, Lang, Config } from '../recipe';
-import { LoadDataService  } from '../load-data.service';
-import { SearchService } from '../search.service';
-import { LangService } from '../lang.service';
-import { ReplacementService } from '../replacement.service';
+import { LoadDataService  } from '../Services/load-data.service';
+import { SearchService } from '../Services/search.service';
+import { LangService } from '../Services/lang.service';
+import { ReplacementService } from '../Services/replacement.service';
 import { Subject, takeUntil } from 'rxjs';
-import { BreakpointService } from '../breakpoint.service';
+import { BreakpointService } from '../Services/breakpoint.service';
+import { MatMenuTrigger } from '@angular/material/menu'
 
 
 @Component({

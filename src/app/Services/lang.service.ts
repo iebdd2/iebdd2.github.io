@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Lang } from './recipe';
+import { Lang } from '../recipe';
 import { Location } from '@angular/common';
 import { Observable, BehaviorSubject } from 'rxjs';
 
@@ -43,7 +43,7 @@ export class LangService {
     try {
       return this.langMap.get(result![1]) as number;
     } catch (TypeError) {
-      return -1;                                                                      // Otherwise return -1
+      return -1;                                                                    // Otherwise return -1
     }
   }
 

@@ -2,13 +2,13 @@ import { Component, OnDestroy } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router} from '@angular/router';
 import { Subject, takeUntil } from 'rxjs';
-import { Recipe, Config, Names, State, Lang, Screen } from '../recipe';
-import { LoadDataService  } from '../load-data.service';
-import { SearchService } from '../search.service';
-import { LangService } from '../lang.service';
-import { ReplacementService } from '../replacement.service';
-import { HistoryService } from '../history.service';
-import { BreakpointService } from '../breakpoint.service';
+import { Recipe, Config, Names, State, Lang } from '../recipe';
+import { LoadDataService  } from '../Services/load-data.service';
+import { SearchService } from '../Services/search.service';
+import { LangService } from '../Services/lang.service';
+import { ReplacementService } from '../Services/replacement.service';
+import { HistoryService } from '../Services/history.service';
+import { BreakpointService } from '../Services/breakpoint.service';
 
 @Component({
   selector: 'app-recipe-body',
@@ -57,6 +57,12 @@ export class RecipeBodyComponent implements OnDestroy {
     name: []
   };
 
+  mobileView(left = 0, right = 0, top = 0, width = 0, max_width = 0): Object {
+    if(this.screenSize) {
+    }
+    return {};
+  }
+
   searchView(search: string): void {
     console.log(search);
     if(search.length) {
@@ -103,12 +109,12 @@ export class RecipeBodyComponent implements OnDestroy {
   }
 
   replaceId(id: number): string {
+    console.log('replace called');
     return this.ReplacementService.replaceId(id, this.lang);
   }
 
   replaceElement(element: string) {
     return this.ReplacementService.replaceElement(element, this.lang);
-    
   }
 
   getConfig(): void {

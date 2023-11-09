@@ -1,7 +1,7 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { BehaviorSubject, Subject, takeUntil, Observable } from 'rxjs';
-import { Screen } from './recipe';
+import { Screen } from '../recipe';
 
 @Injectable({
   providedIn: 'root'

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { LoadDataService } from './load-data.service';
-import { Names, Config } from './recipe';
+import { Names, Config } from '../recipe';
 
 
 @Injectable({

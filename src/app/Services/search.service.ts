@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { LoadDataService } from './load-data.service';
-import { Names } from './recipe';
+import { Names } from '../recipe';
 
 @Injectable({
   providedIn: 'root'

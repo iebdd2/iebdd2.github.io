@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import data from './Data/recipe.json';
-import { Recipe, Config, Names } from './recipe';
+import data from '../Data/recipe.json';
+import { Recipe, Config, Names } from '../recipe';
 import { Observable, of } from 'rxjs';
 
 @Injectable({

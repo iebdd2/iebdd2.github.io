@@ -33,9 +33,15 @@
     </div>
     <div class="search-container" [class.m-flex]="screenSize" *ngIf="this.results.length !== 0">
         <div class="clear-search" [class.m-flex]="screenSize" (click)="clearSearch()"><strong>{{this.config.config[6][this.lang]}}</strong></div>
-        <div class="search-results" [class.m-flex]="screenSize" *ngFor="let result of this.results" (click)="recipeView(result)">{{replaceId(result)}}</div>
+        <div class="search-results" [class.m-flex]="screenSize" *ngFor="let result of this.results" (click)="recipeView(result)">{{result | Id}}</div>
     </div>
 </div>
+
+<button style="position:absolute;top:10vh;left:10vw" mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+</mat-menu>
 
   
 
