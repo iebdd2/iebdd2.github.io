@@ -17,7 +17,7 @@ export class BreakpointService implements OnDestroy {
     ])
     .pipe(takeUntil(this.destroyed))
     .subscribe(result => {
-      (result.matches) ? (this.screenSize.next(Screen.handheld), console.log('handheld')) : (this.screenSize.next(Screen.notHandheld), console.log('not_handheld'));
+      (result.matches) ? this.screenSize.next(Screen.handheld): this.screenSize.next(Screen.notHandheld);
     })
    }
 

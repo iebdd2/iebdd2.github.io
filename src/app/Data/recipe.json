@@ -1479,7 +1479,8 @@
     ["Nach Anfangsbuchstabe:", "By starting letter:", "Par première lettre"],
     ["Nach Kategorie:", "By category:", "Par catégorie"],
     ["Verlauf", "History", "Historique"],
-    ["Alle anzeigen", "Show all", "Afficher tout"]
+    ["Alle anzeigen", "Show all", "Afficher tout"],
+    ["Suchen", "Search", "Rechercher"]
   ],
   "alphabet": [["Ä", "Ü", "Ö"], [], ["É", "È", "Ê", "Î", "Ô", "Ç"],
                ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]],

@@ -1,7 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { LangService } from '../Services/lang.service';
 import { ReplacementService } from '../Services/replacement.service';
-import { Lang } from '../recipe';
 
 
 @Pipe({
@@ -9,23 +7,9 @@ import { Lang } from '../recipe';
 })
 export class IdPipe implements PipeTransform {
   
-  constructor(private ReplacementService: ReplacementService,
-              private LangService: LangService) 
-  {
-  this.lang = Lang.en;
-  }
-  lang: number;
+  constructor(private ReplacementService: ReplacementService) {}
 
-  transform(id: number): string {
-    return this.ReplacementService.replaceId(id, this.lang)
+  transform(id: number, lang: number): string {
+    return this.ReplacementService.replaceId(id, lang)
   }
-
-  getLang(): void {
-    this.LangService.getLang()
-    .subscribe(lang => { this.lang = lang })
-  }
-
-  ngOnInit() {
-    this.getLang();
-  } 
 }

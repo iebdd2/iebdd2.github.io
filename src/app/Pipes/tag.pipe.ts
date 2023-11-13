@@ -1,29 +1,14 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { LangService } from '../Services/lang.service';
 import { ReplacementService } from '../Services/replacement.service';
-import { Lang } from '../recipe';
 
 @Pipe({
   name: 'Tag'
 })
 export class TagPipe implements PipeTransform {
 
-  constructor(private ReplacementService: ReplacementService,
-    private LangService: LangService) {
-      this.lang = Lang.en;
-}
-lang: number;
+  constructor(private ReplacementService: ReplacementService) {}
 
-transform(id: number): string {
-return this.ReplacementService.replaceTag(id, this.lang)
+transform(id: number, lang: number): string {
+return this.ReplacementService.replaceTag(id, lang)
 }
-
-getLang(): void {
-this.LangService.getLang()
-.subscribe(lang => { this.lang = lang })
-}
-
-ngOnInit() {
-this.getLang();
-} 
 }

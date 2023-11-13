@@ -28,11 +28,11 @@ export class RecipeBodyComponent implements OnDestroy {
               private BreakpointService: BreakpointService)
               { 
                 this.lang = Lang.de;
-                this.screenSize = 0;
+                this.is_handheld = 0;
               }
   
   destroyed = new Subject<void>();
-  screenSize: number;
+  is_handheld: number;
   lang: number;
   states: Array<boolean> = Array(4).fill(false);
   langMap = new Map<number, string>([[Lang.de,"de"], [Lang.en, "en"], [Lang.fr, "fr"]]);
@@ -58,7 +58,7 @@ export class RecipeBodyComponent implements OnDestroy {
   };
 
   mobileView(left = 0, right = 0, top = 0, width = 0, max_width = 0): Object {
-    if(this.screenSize) {
+    if(this.is_handheld) {
     }
     return {};
   }
@@ -196,7 +196,7 @@ export class RecipeBodyComponent implements OnDestroy {
   getSize(): void {
     this.BreakpointService.getSize()
     .pipe(takeUntil(this.destroyed))
-    .subscribe(screenSize => this.screenSize = screenSize);
+    .subscribe(is_handheld => this.is_handheld = is_handheld);
   }
 
   ngOnInit(): void {

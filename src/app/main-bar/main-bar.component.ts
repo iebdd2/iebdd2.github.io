@@ -1,9 +1,9 @@
-import { Component, Output, EventEmitter, OnDestroy, ViewChild } from '@angular/core';
+import { Component, Output, EventEmitter, OnDestroy } from '@angular/core';
+import { trigger, state, style, animate, transition, keyframes } from '@angular/animations';
 import { Names, Lang, Config } from '../recipe';
 import { LoadDataService  } from '../Services/load-data.service';
 import { SearchService } from '../Services/search.service';
 import { LangService } from '../Services/lang.service';
-import { ReplacementService } from '../Services/replacement.service';
 import { Subject, takeUntil } from 'rxjs';
 import { BreakpointService } from '../Services/breakpoint.service';
 import { MatMenuTrigger } from '@angular/material/menu'
@@ -12,21 +12,31 @@ import { MatMenuTrigger } from '@angular/material/menu'
 @Component({
   selector: 'app-main-bar',
   templateUrl: './main-bar.component.html',
-  styleUrls: ['./main-bar.component.css']
+  styleUrls: ['./main-bar.component.css'],
+  animations: [
+    trigger('slideInOut', [
+      transition(':enter', [
+        style({ opacity: 0, transform: 'translateY(10px)' }),
+        animate('500ms', style({ opacity: 1, transform: 'translateY(0)' })),
+      ]),
+      transition(':leave', [
+        animate('500ms', style({ opacity: 0, transform: 'translateY(10px)' })),
+      ]),
+    ])    
+  ]
 })
 export class MainBarComponent implements OnDestroy {
 
 constructor(private LoadDataService: LoadDataService, 
             private SearchService: SearchService,
             private LangService: LangService,
-            private ReplacementService: ReplacementService,
             private BreakpointService: BreakpointService) 
             {
               this.lang = Lang.de;
             }
 
-title = 'Recipe Book';
 search: string = '';
+menu_open: boolean = false;
 lang: number;
 results: number[] = [];
 destroyed = new Subject<void>();
@@ -68,8 +78,8 @@ clearSearch() {
   this.search = '';
 }
 
-replaceId(id: number): string {
-  return this.ReplacementService.replaceId(id, this.lang);
+expandMenu() {
+  this.menu_open = !this.menu_open;
 }
 
 getNames(): void {
