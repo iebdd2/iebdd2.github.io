@@ -14,6 +14,7 @@ import { IdPipe } from './Pipes/id.pipe';
 import { ConfigPipe } from './Pipes/config.pipe';
 import { ElementPipe } from './Pipes/element.pipe';
 import { TagPipe } from './Pipes/tag.pipe';
+import { IconPipe } from './Pipes/icon.pipe';
 
 
 
@@ -25,7 +26,8 @@ import { TagPipe } from './Pipes/tag.pipe';
     IdPipe,
     ElementPipe,
     TagPipe,
-    ConfigPipe
+    ConfigPipe,
+    IconPipe
   ],
   imports: [
     BrowserModule,

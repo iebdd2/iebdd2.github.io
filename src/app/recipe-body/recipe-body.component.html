@@ -1,69 +1,60 @@
-<app-main-bar (recipeEvent)="recipeView($event)" (searchEvent)="searchView($event)" (mainEvent)="mainView()"></app-main-bar>
+<app-main-bar (recipeEvent)="recipeView($event)" (searchEvent)="searchView($event)" (mainEvent)="mainView()" (allEvent)="allView()"></app-main-bar>
 
 <div class="history" *ngIf="this.history.length && !is_handheld">
     <div style="font-size:1.5em"><strong>{{10 | Config: this.lang}}:</strong></div>
     <div class="history-delete" (click)="deleteRecords()">{{6 | Config: this.lang}}</div>
     <div class="history-item" *ngFor="let history of this.history" (click)="recipeView(history)">{{history | Id: this.lang}}</div>
 </div>
-
-<div *ngIf="this.states[0]">
-    <h1>{{recipe.names[lang]}}</h1>
-    <div class="flex recipe">
-        <div class="recipe-item overview">
-            <div class="overview-header">{{0 | Config: this.lang}}<br></div>
-            <div class="overview-item" *ngFor="let recipe of recipe.overview; index as i ">{{recipe | Element: this.lang}}<br>
-                <div class="overview-header" *ngIf="i<5">{{i+1 | Config: this.lang}}<br></div>
+<div>
+    <div *ngIf="this.states[0]">
+        <h1>{{recipe.names[lang]}}</h1>
+        <div class="flex recipe">
+            <div class="recipe-item overview">
+                <div class="overview-header">{{0 | Config: this.lang}}<br></div>
+                <div class="overview-item" *ngFor="let recipe of recipe.overview; index as i ">{{recipe | Element: this.lang}}<br>
+                    <div class="overview-header" *ngIf="i<5">{{i+1 | Config: this.lang}}<br></div>
+                    </div>
+                </div>
+            <div class="ingredients">
+                <div class="recipe-item">
+                    <div><strong>{{recipe.ingredients[0][0] | Element: this.lang}}</strong><br></div>
+                    <div *ngFor="let recipe of recipe.ingredients[0] | slice:1;">{{recipe | Element: this.lang}}<br></div>
+                </div>
+                <div class="recipe-item" *ngIf="recipe.ingredients.length == 2">
+                    <div><strong>{{recipe.ingredients[1][0] | Element: this.lang}}</strong><br></div>
+                    <div *ngFor="let recipe of recipe.ingredients[1] | slice:1;">{{recipe | Element: this.lang}}<br></div>
                 </div>
             </div>
-        <div class="ingredients">
-            <div class="recipe-item">
-                <div><strong>{{recipe.ingredients[0][0] | Element: this.lang}}</strong><br></div>
-                <div *ngFor="let recipe of recipe.ingredients[0] | slice:1;">{{recipe | Element: this.lang}}<br></div>
+            <ol class="preparation">
+                <li *ngFor="let recipe of recipe.preparation[lang]">{{recipe}}</li>
+            </ol>
+        </div>
+    </div>
+
+    <div *ngIf="this.states[1]">
+        <h1>{{7 | Config: this.lang}}: {{this.search}}</h1>
+        <div class="flex search-container" style="margin-left: 17vw;margin-right: 17vw;">
+            <div class="search-item" *ngFor="let result of this.results" (click)="recipeView(result)">{{result | Id: this.lang}}</div>
+        </div>
+    </div>
+
+    <div *ngIf="this.states[2]">
+        <div class="flex main">
+            <div (click)="recipeView(recipe)" *ngFor="let recipe of this.main_recipes" class="main-item" [ngSwitch]="(recipe | Icon)">
+                <img class="svg-icon" src="assets/round-bread.svg" *ngSwitchCase="3"/>
+                <img class="svg-icon" src="assets/bread-roll.svg" *ngSwitchCase="4"/>
+                <img class="svg-icon" src="assets/croissant.svg" *ngSwitchCase="8"/>
+                <img class="svg-icon" src="assets/baguette.svg" *ngSwitchCase="9"/>
+                <img class="svg-icon" src="assets/burger.svg" *ngSwitchCase="13"/>
+                <img class="svg-icon" src="assets/pizza.svg" *ngSwitchCase="14"/>
+                <img class="svg-icon" src="assets/bread.svg" *ngSwitchDefault/>
+                {{recipe | Id: this.lang}}
             </div>
-            <div class="recipe-item" *ngIf="recipe.ingredients.length == 2">
-                <div><strong>{{recipe.ingredients[1][0] | Element: this.lang}}</strong><br></div>
-                <div *ngFor="let recipe of recipe.ingredients[1] | slice:1;">{{recipe | Element: this.lang}}<br></div>
-            </div>
         </div>
-        <ol class="preparation">
-            <li *ngFor="let recipe of recipe.preparation[lang]">{{recipe}}</li>
-        </ol>
-    </div>
-</div>
 
-<div *ngIf="this.states[1]">
-    <h1>{{7 | Config: this.lang}}: {{this.search}}</h1>
-    <div class="flex search-container" style="margin-left: 17vw;margin-right: 17vw;">
-        <div class="search-item" *ngFor="let result of this.results" (click)="recipeView(result)">{{result | Id: this.lang}}</div>
+    <div *ngIf="this.states[3]" class="all-recipes flex" >
+        <div>Hi</div>
+        <div class="main-item all-item" *ngFor="let name of this.names.name[this.lang]; index as i" (click)="recipeView(i)">{{i | Id: this.lang}}</div>
     </div>
-</div>
-
-<div *ngIf="this.states[2]">
-    <div class="flex main" >
-        <div class="form__group field flex main-item">
-            <input type="input" class="form__field" placeholder="Name" name="name" id='name' [(ngModel)]="this.search" (input)="filterSearch(this.search)"/>
-            <label for="name" class="form__label">{{7 | Config: this.lang}}</label>
-        </div>
-        <div class="main-item all flex" (click)="allView()">{{11 | Config: this.lang}}</div>
-        <div class="main-item help flex">{{8 | Config: this.lang}}</div>
-        <div class="flex main-item">
-            <ng-container *ngFor="let letter of this.config.alphabet[this.config.alphabet.length - 1].concat(this.config.alphabet[this.lang])">
-                <div class="letter" *ngIf="isNotEmpty(letter)" (click)="filterSearch(letter, true)">{{letter}}</div>
-            </ng-container>
-        </div>
-        <div class="main-item help flex">{{9 | Config: this.lang}}</div>
-        <div class="flex main-item tag-container">
-            <ng-container *ngFor="let tag of this.config.tags; index as i">
-                <div *ngIf="tag.length" class="tag" (click)="this.results = tag">{{i | Tag: this.lang}}</div>
-            </ng-container>
-        </div>
-    </div>
-    <div class="search-container main_search">
-        <div class="search-item" *ngFor="let result of this.results" (click)="recipeView(result)">{{result | Id: this.lang}}</div>
-    </div>
-</div>
-
-<div *ngIf="this.states[3]" class="all-recipes flex">
-    <div class="main-item all-item" *ngFor="let name of this.names.name[this.lang]; index as i" (click)="recipeView(i)">{{i | Id: this.lang}}</div>
 </div>
 

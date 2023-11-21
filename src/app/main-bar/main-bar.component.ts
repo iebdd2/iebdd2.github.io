@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter, OnDestroy } from '@angular/core';
+import { Component, Output, EventEmitter, OnDestroy, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition, keyframes } from '@angular/animations';
 import { Names, Lang, Config } from '../recipe';
 import { LoadDataService  } from '../Services/load-data.service';
@@ -21,11 +21,11 @@ import { MatMenuTrigger } from '@angular/material/menu'
       ]),
       transition(':leave', [
         animate('500ms', style({ opacity: 0, transform: 'translateY(10px)' })),
-      ]),
-    ])    
+      ])
+    ])
   ]
 })
-export class MainBarComponent implements OnDestroy {
+export class MainBarComponent implements OnInit, OnDestroy {
 
 constructor(private LoadDataService: LoadDataService, 
             private SearchService: SearchService,
@@ -56,6 +56,7 @@ config: Config = {
 @Output() recipeEvent = new EventEmitter<number>();
 @Output() searchEvent = new EventEmitter<string>();
 @Output() mainEvent = new EventEmitter<void>();
+@Output() allEvent = new EventEmitter<void>();
 
 recipeView(recipe: number) {
   console.log(this.screenSize);
@@ -70,7 +71,13 @@ searchView(search: string) {
 
 mainView() {
   (this.screenSize) ? (this.results.length = 0, this.search = '') : null;
+  this.toggleMenu(true);
   this.mainEvent.emit();
+}
+
+allView() {
+  this.toggleMenu(true);
+  this.allEvent.emit();
 }
 
 clearSearch() {
@@ -78,8 +85,8 @@ clearSearch() {
   this.search = '';
 }
 
-expandMenu() {
-  this.menu_open = !this.menu_open;
+toggleMenu(close: boolean = false) {
+  close ? this.menu_open = false : this.menu_open = !this.menu_open;
 }
 
 getNames(): void {
@@ -100,6 +107,7 @@ filterSearch(search: string, start: boolean = false): void {
 
 setLang(lang: string): void {
   this.LangService.setLang(lang);
+  this.toggleMenu(true);
 }
 
 getLang(): void {

@@ -1480,7 +1480,9 @@
     ["Nach Kategorie:", "By category:", "Par catégorie"],
     ["Verlauf", "History", "Historique"],
     ["Alle anzeigen", "Show all", "Afficher tout"],
-    ["Suchen", "Search", "Rechercher"]
+    ["Suchen", "Search", "Rechercher"],
+    ["Erweiterte Suche", "Advanced Search", "Recherche avancée"],
+    ["Zufälliges Rezept", "Random Recipe", "[[FR RANDOM RECIPE]]"]
   ],
   "alphabet": [["Ä", "Ü", "Ö"], [], ["É", "È", "Ê", "Î", "Ô", "Ç"],
                ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]],

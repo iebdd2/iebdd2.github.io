@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit} from '@angular/core';
 import { Location } from '@angular/common';
 import { Router} from '@angular/router';
 import { Subject, takeUntil } from 'rxjs';
@@ -16,7 +16,7 @@ import { BreakpointService } from '../Services/breakpoint.service';
   styleUrls: ['./recipe-body.component.css'],
 })
 
-export class RecipeBodyComponent implements OnDestroy {
+export class RecipeBodyComponent implements OnInit, OnDestroy {
   
   constructor(private LoadDataService: LoadDataService, 
               private SearchService: SearchService,
@@ -32,6 +32,7 @@ export class RecipeBodyComponent implements OnDestroy {
               }
   
   destroyed = new Subject<void>();
+  main_recipes: number[] = [];
   is_handheld: number;
   lang: number;
   states: Array<boolean> = Array(4).fill(false);
@@ -83,14 +84,14 @@ export class RecipeBodyComponent implements OnDestroy {
     this.states[state] = true;
   }
 
-  recipeView(recipe: number) {
+  recipeView(recipe: number): void {
     this.Router.navigate([this.langMap.get(this.lang)], {queryParams: {r: recipe}});
     this.addRecord(recipe);
     this.setState(State.recipe);
     this.getRecipe(recipe);
   }
 
-  allView() {
+  allView(): void {
     this.setState(State.all);
     this.Router.navigate([this.langMap.get(this.lang), 'all'], );
   }
@@ -161,6 +162,15 @@ export class RecipeBodyComponent implements OnDestroy {
     this.HistoryService.deleteRecords();
   }
 
+  generateNumbers(): void {
+    let recipenr: number = this.names.name[this.lang].length;
+    let rnd_num: number;
+    while (this.main_recipes.length < 10) {
+      rnd_num = Math.floor(Math.random() * recipenr);
+      this.main_recipes.includes(rnd_num) ? null : this.main_recipes.push(rnd_num);
+    }
+  }
+
   filterSearch(search: string, start: boolean = false): void {
     this.results = this.SearchService.filterSearch(search, this.lang, start);
   }
@@ -205,7 +215,8 @@ export class RecipeBodyComponent implements OnDestroy {
     this.getLang();
     this.getRoute();
     this.getNames();
-    this.getSize()
+    this.getSize();
+    this.generateNumbers();
   }
 
   ngOnDestroy() {

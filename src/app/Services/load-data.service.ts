@@ -8,8 +8,8 @@ import { Observable, of } from 'rxjs';
 })
 
 /*               Load Data Service                       */
-/* Loads required data from the JSON file                */
-/* and distributes it to the other modules               */
+/*      Loads required data from the JSON file           */
+/*      and distributes it to the other modules          */
 
 export class LoadDataService {
   constructor(
