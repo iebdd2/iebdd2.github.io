@@ -17,9 +17,16 @@ export class ConfigPipe implements PipeTransform {
     tag_names: []
   };
 
-  transform(index: number, lang: number): string {
+  transform(index: number, lang: number, repl: string = ''): string {
     (this.config.phrases) ? this.getConfig() : null;
-    return this.config.config[index][lang];
+    let re_value: string;
+    if (repl.length) {
+      re_value = this.config.config[index][lang].replace('%s', repl);
+    }
+    else {
+      re_value = this.config.config[index][lang];
+    }
+    return re_value;
   }
 
   getConfig(): void {

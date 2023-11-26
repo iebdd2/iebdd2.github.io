@@ -13,7 +13,8 @@ import { BreakpointService } from '../Services/breakpoint.service';
 @Component({
   selector: 'app-recipe-body',
   templateUrl: './recipe-body.component.html',
-  styleUrls: ['./recipe-body.component.css'],
+  styleUrls: ['./recipe-body.component.css']
+
 })
 
 export class RecipeBodyComponent implements OnInit, OnDestroy {
@@ -29,13 +30,15 @@ export class RecipeBodyComponent implements OnInit, OnDestroy {
               { 
                 this.lang = Lang.de;
                 this.is_handheld = 0;
+                this.initial_load = true;
               }
   
   destroyed = new Subject<void>();
+  initial_load: boolean;
   main_recipes: number[] = [];
   is_handheld: number;
   lang: number;
-  states: Array<boolean> = Array(4).fill(false);
+  states: Array<boolean> = Array(5).fill(false);
   langMap = new Map<number, string>([[Lang.de,"de"], [Lang.en, "en"], [Lang.fr, "fr"]]);
   results: Array<number> = [];
   history: Array<number> = [];
@@ -58,28 +61,31 @@ export class RecipeBodyComponent implements OnInit, OnDestroy {
     name: []
   };
 
-  mobileView(left = 0, right = 0, top = 0, width = 0, max_width = 0): Object {
-    if(this.is_handheld) {
-    }
-    return {};
-  }
-
   searchView(search: string): void {
-    console.log(search);
     if(search.length) {
       this.Router.navigate([this.langMap.get(this.lang)], {queryParams: {s: search}});
       this.search = search;
       this.setState(State.search);
       this.filterSearch(search, false);
     }
+    else if (this.states[1]) {
+      this.mainView();
+    }
+  }
+
+  clearSearch(): void {
+    this.search = '';
+    this.results.length = 0;
   }
 
   mainView(): void {
     this.Router.navigate([this.langMap.get(this.lang), '']);
+    this.clearSearch();
     this.setState(2);
   }
 
-  setState(state: number): void {
+  setState(state: number, initial: boolean = false): void {
+    (initial) ? null : this.initial_load = false;
     this.states = this.states.fill(false);
     this.states[state] = true;
   }
@@ -93,7 +99,12 @@ export class RecipeBodyComponent implements OnInit, OnDestroy {
 
   allView(): void {
     this.setState(State.all);
-    this.Router.navigate([this.langMap.get(this.lang), 'all'], );
+    this.Router.navigate([this.langMap.get(this.lang)], {queryParams: {all: 1}});
+  }
+  
+  advancedView(): void {
+    this.setState(State.advanced);
+    this.Router.navigate([this.langMap.get(this.lang)], {queryParams: {adv: 1}});
   }
 
   isNotEmpty(string: string): boolean {
@@ -141,7 +152,7 @@ export class RecipeBodyComponent implements OnInit, OnDestroy {
     .pipe(takeUntil(this.destroyed))
     .subscribe(lang => {
         this.lang = lang;
-        if (this.results.length != 0 && this.search.length != 0) {
+        if (this.results && this.search) {
           this.filterSearch(this.search, false)
         }
         this.Router.navigate([this.langMap.get(this.lang)], {queryParamsHandling: 'merge'});
@@ -176,31 +187,35 @@ export class RecipeBodyComponent implements OnInit, OnDestroy {
   }
 
   getRoute(): void {
-    const route: string = this.Location.path();
-    const result = new RegExp(/[/?]?([sralSRAL]{1,3})(?:=(\w+|[0-9]{1,3}))?/).exec(route);
+    const route: string = this.Location.path().slice(3);
+    const result = new RegExp(/[/?]?([sradvlSRADVL]{1,3})(?:=(\w+|[0-9]{1,3}))?/).exec(route);
     if (result === null) {
-      this.defaultRoute();
+      this.defaultRoute(true);
       return;
     }
+    console.log(result);
     switch(result![1]) {
       case 'r':
-        (!isNaN(+result![2])) ? this.recipeView(+result[2]) : this.defaultRoute();
+        (!isNaN(+result![2])) ? this.recipeView(+result[2]) : this.defaultRoute(true);
         break;
       case 's':
-        (this.SearchService.isLetter(result![2])) ? this.searchView(result[2]) :  this.defaultRoute();
+        (this.SearchService.isLetter(result![2])) ? this.searchView(result[2]) :  this.defaultRoute(true);
         break;
       case 'all': 
         this.allView();
       break;
+      case 'adv':
+        this.advancedView();
+      break;
       default:
-        this.defaultRoute();
+        this.defaultRoute(true);
         break;
     }
   }
 
-  defaultRoute(): void {
+  defaultRoute(initial: boolean = false): void {
     this.Router.navigate([this.langMap.get(this.lang)]);
-    this.setState(State.main);
+    this.setState(State.main, initial);
   }
 
   getSize(): void {

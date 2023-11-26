@@ -57,9 +57,12 @@ config: Config = {
 @Output() searchEvent = new EventEmitter<string>();
 @Output() mainEvent = new EventEmitter<void>();
 @Output() allEvent = new EventEmitter<void>();
+@Output() advancedEvent = new EventEmitter<void>();
 
-recipeView(recipe: number) {
-  console.log(this.screenSize);
+recipeView() {
+  let recipenr: number = this.names.name[this.lang].length;
+  let recipe = Math.floor(Math.random() * recipenr);
+  this.toggleMenu(true);
   (this.screenSize) ? (this.results.length = 0, this.search = '') : null;
   this.recipeEvent.emit(recipe);
 }
@@ -78,6 +81,11 @@ mainView() {
 allView() {
   this.toggleMenu(true);
   this.allEvent.emit();
+}
+
+advancedView() {
+  this.toggleMenu(true);
+  this.advancedEvent.emit();
 }
 
 clearSearch() {

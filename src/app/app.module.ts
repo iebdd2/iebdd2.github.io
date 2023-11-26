@@ -15,6 +15,7 @@ import { ConfigPipe } from './Pipes/config.pipe';
 import { ElementPipe } from './Pipes/element.pipe';
 import { TagPipe } from './Pipes/tag.pipe';
 import { IconPipe } from './Pipes/icon.pipe';
+import { SearchPipe } from './Pipes/search.pipe';
 
 
 
@@ -27,7 +28,8 @@ import { IconPipe } from './Pipes/icon.pipe';
     ElementPipe,
     TagPipe,
     ConfigPipe,
-    IconPipe
+    IconPipe,
+    SearchPipe
   ],
   imports: [
     BrowserModule,

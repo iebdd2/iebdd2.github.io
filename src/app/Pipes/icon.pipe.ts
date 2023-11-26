@@ -9,7 +9,8 @@ export class IconPipe implements PipeTransform {
 
   constructor(private LoadDataService: LoadDataService){}
 
-  sequence: number[] = [14, 13, 9, 8, 4, 3];
+  sequence: number[] = [17, 16, 15, 14, 13, 9, 8, 4, 3];
+  svg: string[] = ['easter', 'christmas', 'wreath', 'pizza', 'burger', 'baguette', 'croissant', 'bread-roll', 'round-bread', 'bread'];
   config: Config = {
     phrases: [],
     config: [],
@@ -18,14 +19,14 @@ export class IconPipe implements PipeTransform {
     tag_names: []
   };
 
-  transform(id: number): number {
+  transform(id: number): string {
     (this.config.phrases) ? this.getConfig() : null;
     for(let i = 0; i < this.sequence.length; i++) {
       if(this.config.tags[this.sequence[i]].includes(id)) {
-        return this.sequence[i];
+        return this.svg[i];
       }
     }
-    return -1;
+    return this.svg[this.svg.length - 1];
   }
 
   getConfig(): void {

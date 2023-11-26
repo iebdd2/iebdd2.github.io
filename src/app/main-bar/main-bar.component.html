@@ -6,37 +6,22 @@
         <span (click)="toggleMenu()" [class.pressed]="menu_open" class="burger-menu">&#9776;</span>
         <div class="search-bar">
             <form autocomplete="off">
-              <input class="bar-search expandright" id="searchright" type="search" placeholder="{{12 | Config: this.lang}}">
-              <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+              <input [(ngModel)]="this.search"  (input)="searchView(this.search)" name="search" class="bar-search expandright" id="searchright" type="search" placeholder="{{7 | Config: this.lang}}">
+              <label (click)="searchView(this.search)" class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
             </form>
         </div>
     </div>
-    <div *ngIf="menu_open" [@slideInOut] class="menu-container">
-            <div class="menu-point">{{13 | Config: this.lang}}</div>
-            <div (click)="allView()"  class="menu-point">{{11 | Config: this.lang}}</div>
-            <div class="menu-point">{{14 | Config: this.lang}}</div>
-        <div class="svg-container flex">
-            <img id="flag-de" class="svg-icon" src="assets/de.svg" alt="Flag of Germany" (click)="setLang('de')"/>
-            <img id="flag-en" class="svg-icon" src="assets/en.svg" alt="Flag of the United Kingdom" (click)="setLang('en')"/>
-            <img id="flag-fr" class="svg-icon" src="assets/fr.svg" alt="Flag of France" (click)="setLang('fr')"/>
+    <div [class.desktop-menu]="!screenSize" *ngIf="menu_open" [@slideInOut] class="menu-container">
+            <div [class.desktop-item]="!screenSize" (click)="advancedView()" class="menu-point">{{13 | Config: this.lang}}</div>
+            <div [class.desktop-item]="!screenSize" (click)="allView()"  class="menu-point">{{11 | Config: this.lang}}</div>
+            <div [class.desktop-item]="!screenSize" (click)="recipeView()" class="menu-point">{{14 | Config: this.lang}}</div>
+        <div [class.desktop-svg]="!screenSize" class="svg-container flex">
+            <img [class.desktop-icon]="!screenSize" id="flag-de" class="svg-icon" src="assets/de.svg" alt="Flag of Germany" (click)="setLang('de')"/>
+            <img [class.desktop-icon]="!screenSize" id="flag-en" class="svg-icon" src="assets/en.svg" alt="Flag of the United Kingdom" (click)="setLang('en')"/>
+            <img [class.desktop-icon]="!screenSize" id="flag-fr" class="svg-icon" src="assets/fr.svg" alt="Flag of France" (click)="setLang('fr')"/>
         </div>
     </div>
-    <div class="search-container" [class.m-flex]="screenSize" *ngIf="this.results.length !== 0">
-        <div class="clear-search" [class.m-flex]="screenSize" (click)="clearSearch()"><strong>{{6 | Config: this.lang}}</strong></div>
-        <div class="search-results" [class.m-flex]="screenSize" *ngFor="let result of this.results" (click)="recipeView(result)">{{result | Id: this.lang}}</div>
-    </div>
 </div>
-<!-- <button style="position:absolute;top:10vh;left:10vw" mat-button [matMenuTriggerFor]="menu">Menu</button>
-<mat-menu #menu="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-</mat-menu> -->
-
-<!-- <div class="menu-search flex">
-    <form autocomplete="off">
-        <input class="menu-input" id="menusearch" type="search" placeholder="{{12 | Config: this.lang}}">
-    </form>
-</div> -->
 
   
 

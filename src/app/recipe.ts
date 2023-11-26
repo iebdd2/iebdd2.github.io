@@ -21,7 +21,8 @@ export enum State {
     recipe,
     search,
     main,
-    all
+    all,
+    advanced
 }
 
 export enum Lang {

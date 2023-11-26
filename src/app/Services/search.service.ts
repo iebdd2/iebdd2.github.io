@@ -28,7 +28,7 @@ export class SearchService {
     let results: Array<number> = [];
     let start_str: string = '';
     (start) ? start_str = '^' : null;
-    if (search.length) {
+    if (search) {
       const bound: number = this.names.name[lang].length;
       const regexp = new RegExp(start_str + this.regexEscape(search), 'i');
       for(var index = 0 ; index < bound ; index++) {    
