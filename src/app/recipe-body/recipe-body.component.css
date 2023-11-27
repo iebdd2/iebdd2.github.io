@@ -1,11 +1,18 @@
 /* General */
 
+@font-face {
+  font-family: "IBM Plex";
+  src: url('/assets/IBMPlexSerif.woff2') format('woff2'),
+       url('/assets/IBMPlexSerif.woff') format('woff');
+}
+
 :host {
   --main-colour: #ff641d;
   --secondary-colour: #000;
   --hover-colour: #fff;
   --desktop-width: (30vw - 71px);
   --handheld-width: (100vw - 71px);
+  font-size: 10pt;
 }
 
 h1 {
@@ -19,6 +26,7 @@ h1 {
   display:flex;
   flex-wrap: wrap;
   align-items: baseline;
+  font-family: 'IBM Plex', Fallback, Serif;
 }
 
 /* History */
@@ -130,6 +138,8 @@ ol > li::marker {
     text-align: left;
     justify-content: left;
     margin: 15px 0 10px 0;
+    font-size: 22px;
+    font-weight: 600;
   }
 
   /* Main Letters */
@@ -189,7 +199,7 @@ ol > li::marker {
   .main__form {
     width: calc(80vw + 23px);
     justify-content: center;
-    padding: 15px 0 15px 0;
+    padding: 0 0 15px 0;
   }
 
   .main__input {
@@ -202,6 +212,10 @@ ol > li::marker {
   }
 
   /* Main Search */
+
+  .main__search:not(:placeholder-shown) .main__form {
+    width: 80vw;
+  }
 
   .main__search:not(:placeholder-shown) ~ .clear {
     opacity: 1;
@@ -233,7 +247,6 @@ ol > li::marker {
 
   .advanced__options {
     width: inherit;
-    border-bottom: 2px solid var(--main-colour);
     padding: 0 0 10px 0;
   }
 

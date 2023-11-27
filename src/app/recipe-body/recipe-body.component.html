@@ -82,24 +82,25 @@
 <div *ngIf="this.states[4]" class="flex advanced">
     <div class="advanced__options">
         <h1>{{13  | Config: this.lang}}</h1>
+        <div class="help">{{8 | Config: this.lang}}</div>
+        <div class="flex">
+            <ng-container *ngFor="let letter of this.config.alphabet[this.config.alphabet.length - 1].concat(this.config.alphabet[this.lang])">
+                <div class="letter main-item" *ngIf="isNotEmpty(letter)" (click)="filterSearch(letter, true); this.search = letter">{{letter}}</div>
+            </ng-container>
+        </div>
+        <div class="help">{{9 | Config: this.lang}}</div>
+        <div class="flex tag-container">
+            <ng-container *ngFor="let tag of this.config.tags; index as i">
+                <div *ngIf="tag.length" class="tag main-item" (click)="filterSearch(i.toString(), true)">{{i | Tag: this.lang}}</div>
+            </ng-container>
+        </div>
+        <div class="help">{{19 | Config: this.lang}}:</div>
         <form class="main__form flex" action="/search">
             <div class="main__input">
                 <input [(ngModel)]="this.search" (input)="filterSearch(this.search)" (keyup.enter)="filterSearch(this.search)" name="search" list="recipe__options" class="main__search" type="search" placeholder="{{7 | Config: this.lang}}"/>
                 <input (click)="clearSearch()" class="clear" type="reset" value="X" alt="Clear the search form">
             </div>
         </form>
-        <div class="help">{{8 | Config: this.lang}}</div>
-        <div class="flex">
-            <ng-container *ngFor="let letter of this.config.alphabet[this.config.alphabet.length - 1].concat(this.config.alphabet[this.lang])">
-                <div class="letter main-item" *ngIf="isNotEmpty(letter)" (click)="filterSearch(letter, true)">{{letter}}</div>
-            </ng-container>
-        </div>
-        <div class="help">{{9 | Config: this.lang}}</div>
-        <div class="flex tag-container">
-            <ng-container *ngFor="let tag of this.config.tags; index as i">
-                <div *ngIf="tag.length" class="tag main-item" (click)="this.results = tag; this.search = ''">{{i | Tag: this.lang}}</div>
-            </ng-container>
-        </div>
     </div>
     <div class="flex search__result" *ngIf="this.results.length !== 0">
         <h1>{{7 | Config: this.lang}}: {{this.search}}</h1>

@@ -44,6 +44,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -148,7 +151,11 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
+
    ],
    "tags": [
     "{T0}",
@@ -256,6 +263,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -309,6 +319,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -361,6 +374,9 @@
     ],
     [
      "Eng Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -412,6 +428,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -466,6 +485,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -522,6 +544,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -572,6 +597,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -633,6 +661,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -682,6 +713,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -733,6 +767,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -787,6 +824,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -838,7 +878,12 @@
      "Teiglinge vor dem Backen leicht mit Wasser besprühen und in den Backofen schieben.",
      "Goldbraun backen."
     ],
-    []
+    [
+      "EN Placeholder"
+    ],
+    [
+      "FR Placeholder"
+    ]
    ],
    "tags": [
     "{T0}",
@@ -893,6 +938,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -947,6 +995,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -1004,6 +1055,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -1060,7 +1114,10 @@
      "Goldbraun backen. Keinen Dampf verwenden."
     ],
     [
-     "Eng Placeholder"
+     "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -1120,6 +1177,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -1189,6 +1249,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -1247,6 +1310,9 @@
     ],
     [
      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
     ]
    ],
    "tags": [
@@ -1308,7 +1374,12 @@
      "Vor dem Backen erneut gut mit Wasser besprühen.",
      "Goldbraun backen."
     ],
-    []
+    [
+      "ENG Placeholder"
+    ],
+    [
+      "FR Placeholder"
+    ]
    ],
    "tags": [
     "{T0}",
@@ -1386,7 +1457,8 @@
      "Pre-heat the oven to 195°C with ventilation 10 minutes before the dough has finished resting.",
      "Mix the egg and the dash of milk well and spread it over the unbaked curd cheese sticks. Then make two diagonal cut across each of them.",
      "Bake until golden. Do not use steam."
-    ],[
+    ],
+    [
     "Pesez les ingrédients et pétrissez la pâte comme indiqué.",
     "Laisser la pâte reposer pendant 15 minutes.",
     "Déposez la pâte réposée sur un plan de farine légérement fariné et séparez la en morceaux de 80g chacun.",
@@ -1399,7 +1471,8 @@
     "Placez les pâtons sur une plaque de cuisson recouverte de papier sulfurisé ou d’un tapis de cuisson résistant à la chaleur et laissez les reposer encore 25 à 35 minutes.",
     "Commencez à préchauffer le four à 190°C (avec ventilation) 10 minutes avant que les pâtons aient fini de reposer.",
     "Mélangez l'oeuf avec un peu de lait et étalez la dorure sur la pâte. Faites 2 incisions diagonales sur chaque batonnet avant d'enfourner.",
-    "Cuire jusqu'à ce qu'ils soient dorés. Ne pas utiliser le mode vapeur."]
+    "Cuire jusqu'à ce qu'ils soient dorés. Ne pas utiliser le mode vapeur."
+    ]
    ],
    "tags": [
     "{T0}",
@@ -1499,14 +1572,15 @@
     ["Nach Anfangsbuchstabe:", "By starting letter:", "Par première lettre"],
     ["Nach Kategorie:", "By category:", "Par catégorie"],
     ["Verlauf", "History", "Historique"],
-    ["Alle anzeigen", "Show all", "Afficher tout"],
+    ["Alle Rezepte anzeigen", "Show all recipes", "Afficher tout les recettes"],
     ["Suchen", "Search", "Rechercher"],
     ["Erweiterte Suche", "Advanced Search", "Recherche avancée"],
     ["Zufälliges Rezept", "Random Recipe", "[[FR RANDOM RECIPE]]"],
     ["Aus der Sammlung:", "From the collection:", "[[FR FROM THE COLLECTION ]]"],
     ["Kürzlich angesehen:", "Recently viewed:", "[[FR RECENTLY VIEWED]]"],
     ["Baking Online enthält zurzeit %s Rezepte.", "Baking Online currently contains %s recipes.", "[[FR CURRENTLY %s RECIPES]]"],
-    ["Alle %s verfügbaren Rezepte:", "All %s available recipes:", "[[FR ALL %s RECIPES]]:"]
+    ["Alle %s verfügbaren Rezepte:", "All %s available recipes:", "[[FR ALL %s RECIPES]]:"],
+    ["Volltextsuche", "Full Text Search", "[[FR FULL TEXT SEARCH]]"]
   ],
   "alphabet": [["Ä", "Ü", "Ö"], [], ["É", "È", "Ê", "Î", "Ô", "Ç"],
                ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]],

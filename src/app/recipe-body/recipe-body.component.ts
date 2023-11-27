@@ -9,24 +9,27 @@ import { LangService } from '../Services/lang.service';
 import { ReplacementService } from '../Services/replacement.service';
 import { HistoryService } from '../Services/history.service';
 import { BreakpointService } from '../Services/breakpoint.service';
+import { IdPipe } from '../Pipes/id.pipe';
 
 @Component({
   selector: 'app-recipe-body',
   templateUrl: './recipe-body.component.html',
-  styleUrls: ['./recipe-body.component.css']
+  styleUrls: ['./recipe-body.component.css'],
+  providers: [IdPipe]
 
 })
 
 export class RecipeBodyComponent implements OnInit, OnDestroy {
   
-  constructor(private LoadDataService: LoadDataService, 
+  constructor(private LoadDataService: LoadDataService,
               private SearchService: SearchService,
               private LangService: LangService,
               private ReplacementService: ReplacementService,
               private HistoryService: HistoryService,
               private Router: Router,
               private Location: Location,
-              private BreakpointService: BreakpointService)
+              private BreakpointService: BreakpointService,
+              private IdPipe: IdPipe)
               { 
                 this.lang = Lang.de;
                 this.is_handheld = 0;
@@ -36,13 +39,13 @@ export class RecipeBodyComponent implements OnInit, OnDestroy {
   destroyed = new Subject<void>();
   initial_load: boolean;
   main_recipes: number[] = [];
+
   is_handheld: number;
   lang: number;
   states: Array<boolean> = Array(5).fill(false);
   langMap = new Map<number, string>([[Lang.de,"de"], [Lang.en, "en"], [Lang.fr, "fr"]]);
   results: Array<number> = [];
   history: Array<number> = [];
-  route: string = '';
   search: string = '';
   recipe: Recipe = {
     names: [],
@@ -183,6 +186,13 @@ export class RecipeBodyComponent implements OnInit, OnDestroy {
   }
 
   filterSearch(search: string, start: boolean = false): void {
+    if(this.states[4] && this.results) {
+      let search_arr: string[] = [];
+      for (let x = 0; x < this.results.length; x++) {
+        search_arr.push(this.IdPipe.transform(this.results[x], this.lang));
+      }
+      this.results = this.SearchService.filterSearch(search, this.lang, start, search_arr);
+    }
     this.results = this.SearchService.filterSearch(search, this.lang, start);
   }
 

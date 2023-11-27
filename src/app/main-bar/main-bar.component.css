@@ -169,11 +169,12 @@ div {
 		flex-wrap: wrap;
 		flex-direction: column;
 		overflow: auto;
+		font-family: 'IBM Plex', Fallback, Serif;
 	}
 
 	.menu-point {
 		text-align: center;
-		font-size: 22pt;
+		font-size: 14pt;
 		font-weight: 700;
 		padding: 15px 10px;
 		transition: 0.4s;
@@ -211,7 +212,6 @@ div {
 
   .desktop-item {
 	width: var(--desktop-width);
-	font-size: 16pt;
 	text-align: left;
   }
 

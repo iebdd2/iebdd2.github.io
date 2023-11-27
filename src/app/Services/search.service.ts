@@ -23,16 +23,27 @@ export class SearchService {
     return str.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
   }
 
-  filterSearch(search: string, lang: number, start: boolean): Array<number> {
+  filterSearch(search: string, lang: number, start: boolean, search_list: string[] = []): Array<number> {
     (this.names.name) ? this.getNames() : null;
     let results: Array<number> = [];
     let start_str: string = '';
+    let bound: number;
+    let test_arr: string[];
     (start) ? start_str = '^' : null;
     if (search) {
-      const bound: number = this.names.name[lang].length;
+/*       if(search_list.length) {
+        bound = search_list.length;
+        test_arr = search_list;
+      }
+      else {
+        bound = this.names.name[lang].length;
+        test_arr = this.names.name[lang];
+      } */
+      bound = this.names.name[lang].length;
+      test_arr = this.names.name[lang];
       const regexp = new RegExp(start_str + this.regexEscape(search), 'i');
       for(var index = 0 ; index < bound ; index++) {    
-        if (regexp.test(this.names.name[lang][index])){
+        if (regexp.test(test_arr[index])){
           (results.includes(index)) ? null : results.push(index);
         } 
       }
