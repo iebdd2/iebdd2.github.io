@@ -31,16 +31,14 @@ export class SearchService {
     let test_arr: string[];
     (start) ? start_str = '^' : null;
     if (search) {
-/*       if(search_list.length) {
+      if(search_list.length) {
         bound = search_list.length;
         test_arr = search_list;
       }
       else {
         bound = this.names.name[lang].length;
         test_arr = this.names.name[lang];
-      } */
-      bound = this.names.name[lang].length;
-      test_arr = this.names.name[lang];
+      }
       const regexp = new RegExp(start_str + this.regexEscape(search), 'i');
       for(var index = 0 ; index < bound ; index++) {    
         if (regexp.test(test_arr[index])){

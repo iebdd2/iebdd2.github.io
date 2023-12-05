@@ -203,7 +203,6 @@ export class RecipeBodyComponent implements OnInit, OnDestroy {
       this.defaultRoute(true);
       return;
     }
-    console.log(result);
     switch(result![1]) {
       case 'r':
         (!isNaN(+result![2])) ? this.recipeView(+result[2]) : this.defaultRoute(true);

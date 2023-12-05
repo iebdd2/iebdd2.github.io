@@ -91,7 +91,7 @@
         <div class="help">{{9 | Config: this.lang}}</div>
         <div class="flex tag-container">
             <ng-container *ngFor="let tag of this.config.tags; index as i">
-                <div *ngIf="tag.length" class="tag main-item" (click)="filterSearch(i.toString(), true)">{{i | Tag: this.lang}}</div>
+                <div *ngIf="tag.length" class="tag main-item" (click)="this.results = tag">{{i | Tag: this.lang}}</div>
             </ng-container>
         </div>
         <div class="help">{{19 | Config: this.lang}}:</div>
