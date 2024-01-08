@@ -4,7 +4,9 @@
     <div class="flex recipe">
         <h1 class="recipe-header">{{recipe.names[this.lang]}}</h1>
         <div class="icon-band">
-            <img class="svg-icon" src="assets/printer.svg"/>
+            <div class="band-item">
+                <img (click)="printDocument()" class="svg-icon" src="assets/printer.svg"/>
+            </div>
         </div>
         <div class="recipe-item overview">
             <div class="overview-header">{{0 | Config: this.lang}}<br></div>

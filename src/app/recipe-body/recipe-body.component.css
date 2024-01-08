@@ -29,6 +29,16 @@ h1 {
   font-family: 'IBM Plex', Fallback, Serif;
 }
 
+.svg-icon {
+  transition: 0.4s;
+  display: block;
+  position: relative;
+  object-fit: contain;
+  width: 35px;
+  height: 35px;
+  margin: auto;
+}
+
 /* History */
 
 .history {
@@ -41,6 +51,7 @@ h1 {
 .recipe-header {
   border-bottom: 3px solid var(--main-colour);
   padding: 0 0 10px 0;
+  margin: 0;
 }
 
 .overview {
@@ -89,6 +100,30 @@ ol > li::marker {
   justify-content: center;
 }
 
+.icon-band {
+  display: flex;
+  width: 90vw;
+  flex-direction: row-reverse;
+}
+
+.band-item {
+  padding: 5px;
+  margin: 0;
+  transition: 0.4s;
+}
+
+.band-item:hover {
+  background: var(--main-colour);
+  color: var(--hover-colour);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.band-item:hover > .svg-icon {
+  filter: invert(89%) sepia(100%) saturate(21%) hue-rotate(279deg) brightness(108%) contrast(107%);
+  transition: 0.4s;
+}
+
 /* Main View */
 
   .main, .all-recipes, .advanced {
@@ -122,16 +157,6 @@ ol > li::marker {
   .main-item:hover > .svg-icon {
     filter: invert(89%) sepia(100%) saturate(21%) hue-rotate(279deg) brightness(108%) contrast(107%);
     transition: 0.4s;
-  }
-
-  .svg-icon {
-    transition: 0.4s;
-    display: block;
-    position: relative;
-    object-fit: contain;
-    width: 35px;
-    height: 35px;
-    margin: auto;
   }
 
   .help {

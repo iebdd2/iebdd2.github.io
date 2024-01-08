@@ -34,7 +34,7 @@ export class HistoryService{
   
   getHistory(): Observable<Array<number>> {
     if(this.history.length) {
-      (!localStorage.getItem('histoy')) ? this.history = JSON.parse(localStorage.getItem('history') as string) as Array<number> : null;
+      (!localStorage.getItem('history')) ? this.history = JSON.parse(localStorage.getItem('history') as string) as Array<number> : null;
     }
     return of(this.history);
   }

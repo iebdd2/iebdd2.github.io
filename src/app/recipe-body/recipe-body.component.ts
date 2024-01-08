@@ -233,6 +233,10 @@ export class RecipeBodyComponent implements OnInit, OnDestroy {
     .subscribe(is_handheld => this.is_handheld = is_handheld);
   }
 
+  printDocument() {
+    window.print();
+  }
+
   ngOnInit(): void {
     this.getHistory();
     this.getConfig();
