@@ -19,9 +19,6 @@ export class ReplacementService {
     name: []
   };
 
-  t0: number = 0;
-  t1: number = 0;
-
   config: Config = {
     phrases: [],
     config: [],
